@@ -1,8 +1,9 @@
+import Navigation from '../../components/nav'
 const Header = () => {
     return (
-        <>
-        <h2>header section </h2>
-        </>
+      <header>
+          <Navigation />
+      </header>    
     )
 }
 export default Header
