@@ -1,4 +1,4 @@
-import Header from './pages/about/header/header'
+import Header from './pages/home/headerHome'
 import './Css/App.css'
 function App() {
   return (

@@ -1,0 +1,38 @@
+@use '../base';
+.hero__home {
+    background-image: url('../assets/home/mobile/image-hero-coffeepress.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0 1.5rem;
+    border-radius: 10px;
+}
+
+.hero__content {
+    padding: 6rem 1.5rem;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 40px;
+}
+
+.hero__summary {
+    font-size: .9375rem;
+    text-align: center;
+    line-height: 25px;
+    margin: 1.5rem auto 3rem;
+}
+
+.hero--btn {
+	background-color: base.$bg-green-btn;
+	display: inline-block;	
+	font-size: 1.125rem;
+	font-weight: 900;
+	color: white;
+	line-height: 25px;
+	padding: 1rem 2.6rem;
+    border-radius: 6px;
+}
