@@ -1,0 +1,49 @@
+.nav {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 1.5rem;
+}
+
+.logo__wrapper {
+	flex: 1 1 70%;
+}
+
+.menu__control {
+	position: relative;
+	flex: 1 1 30%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hamburger {
+	display: block;
+	min-height: 100%;
+}
+
+.close__menu {
+	min-height: 100%;
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+}
+
+.modal {
+	display: none;
+	position: relative;
+	left: -25%;
+	top: 60%;
+}
+
+.toggle__btn__close {
+	display: block;
+	position: relative;
+	background-color: inherit;
+	border: none;
+}
+
+.toggle__btn__open {
+	display: none;
+}

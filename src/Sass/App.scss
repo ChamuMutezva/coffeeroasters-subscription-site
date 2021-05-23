@@ -1,0 +1,7 @@
+@use './base';
+@use './components';
+body {
+    background-color: base.$bg-lt-cream;
+    font-family: base.$main-font;
+    font-size: 16px;
+}
