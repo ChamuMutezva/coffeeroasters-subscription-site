@@ -17,7 +17,7 @@ const Navigation = () => {
                     <img src={Logo} alt="well come to coffee roasters" />
                 </a>
             </div>
-            <div className="modal">
+            <div className={`modal ${ShowMenu ? "modal__open" : ""}`}>
                 <NavList />
             </div>
             <div className="menu__control">

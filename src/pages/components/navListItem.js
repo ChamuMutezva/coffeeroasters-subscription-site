@@ -1,7 +1,7 @@
 const NavListItem = (props) => {
     return(
-        <li>
-           <a href="/" className="anchor">{props.name}</a>
+        <li className="nav__item">
+           <a href="/" className="anchor nav__item--btn">{props.name}</a>
         </li>
     )
 }

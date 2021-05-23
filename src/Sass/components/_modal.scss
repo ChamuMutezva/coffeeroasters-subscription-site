@@ -1,0 +1,56 @@
+@use '../base';
+
+.modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    width: 100%;
+}
+
+.modal__open {
+    display: block;
+}
+
+.nav__list {
+    text-align: center;
+    padding: 0;
+}
+
+.nav__item--btn {
+    text-decoration: none;
+    color: base.$tx-black;
+}
+
+.nav__item {
+    list-style: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+@include base.mQ(720px) {
+    .modal {
+        display: block;
+        position: relative;
+        top: 0;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .nav__item--btn {
+        font-size: .75rem;
+        color: base.$tx-lt-grey;
+        letter-spacing: 0.92px;
+        line-height: 15px;
+    }
+
+    .menu__control {
+        display: none;
+    }
+}
