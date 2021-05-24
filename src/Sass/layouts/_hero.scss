@@ -1,11 +1,19 @@
 @use '../base';
-.hero__home {
-    background-image: url('../assets/home/mobile/image-hero-coffeepress.jpg');
+.hero {   
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     margin: 0 1.5rem;
     border-radius: 10px;
+}
+.hero__home {
+    background-image: url('../assets/home/mobile/image-hero-coffeepress.jpg');
+}
+.hero__about {
+    background-image: url('../assets/about/mobile/image-hero-whitecup.jpg');
+}
+.hero__subscribe {
+    background-image: url('../assets/plan/mobile/image-hero-blackcup.jpg');
 }
 
 .hero__content {

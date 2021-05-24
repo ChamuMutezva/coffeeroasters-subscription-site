@@ -1,7 +1,7 @@
 import Hero from '../components/hero'
 const HeaderAbout = () => {
     return (
-      <div>          
+      <div className="hero hero__about">          
           <Hero title="About us"
           content="Coffeeroasters began its journey of exotic discovery in 1999, highlighting stories of 
           coffee from around the world. We have since been dedicated to bring the perfect cup - from 
