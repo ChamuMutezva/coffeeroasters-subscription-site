@@ -4,6 +4,7 @@ const MainHome = () => {
     console.log(Collections)
     return (
         <main className="main">
+            {/*collections sections */}
             <section className="collection">
                 <h2 className="collection__title">Our collection</h2>
                 <ul className="collection__list">
@@ -20,6 +21,9 @@ const MainHome = () => {
                     })}
                 </ul>
             </section>
+            {/*end of collections sections */}
+
+            {/*aside section */}
             <aside className="aside">
                 <div className="aside__container">
                     <h2 className="aside__title">Why choose us?</h2>
@@ -29,10 +33,20 @@ const MainHome = () => {
                         you a more impactful experience on every level.
                     </p>
                 </div>
-                <div className="cards__list">
-                    <Card />
+                <div className="decoration">
                 </div>
             </aside>
+            {/*end of aside section */}
+
+            {/*cards - benefits for choosing us */}
+            <section className="cards__list">
+                <Card />
+            </section>
+            {/*end of cards - benefits for choosing us */}
+
+            <section className="works">
+                <h2 className="works__title">How it works</h2>
+            </section>
         </main>
     )
 }

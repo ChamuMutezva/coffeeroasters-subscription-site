@@ -1,0 +1,11 @@
+@use '../base';
+.works {
+	margin-top: -35rem;
+}
+.works__title {
+	text-align: center;
+    color: base.$tx-lt-grey;
+    font-size: 1.5rem;
+    line-height: 32px;
+    font-weight: 800;
+}
