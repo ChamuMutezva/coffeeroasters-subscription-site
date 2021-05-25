@@ -1,3 +1,4 @@
+@use '../base';
 .nav {
 	position: relative;
 	display: flex;
@@ -39,4 +40,13 @@
 
 .toggle__btn__open {
 	display: none;
+}
+
+@include base.mQ(720px) {
+	.nav {		
+		padding: 0.5rem 2.5rem;
+	}
+	.nav__item {		
+		padding: 0 1rem;
+	}
 }

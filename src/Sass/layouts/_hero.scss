@@ -44,3 +44,42 @@
 	padding: 1rem 2.6rem;
     border-radius: 6px;
 }
+
+@include base.mQ(720px) {
+    .hero {       
+        margin: 0px 2.5rem;       
+    }
+    .hero__content {
+        width: 25rem;
+        text-align: left;
+    }
+    .hero__title {
+        font-size: 3rem;
+        text-align: left;
+        line-height: 48px;
+    }
+    .hero__summary {       
+        text-align: left;       
+    }
+    .hero__home {
+        background-image: url('../assets/home/tablet/image-hero-coffeepress.jpg');
+    }
+    .hero__about {
+        background-image: url('../assets/about/tablet/image-hero-whitecup.jpg');
+    }
+    .hero__subscribe {
+        background-image: url('../assets/plan/tablet/image-hero-blackcup.jpg');
+    }
+}
+
+@include base.mQ(1080px) {
+    .hero__home {
+        background-image: url('../assets/home/desktop/image-hero-coffeepress.jpg');
+    }
+    .hero__about {
+        background-image: url('../assets/about/desktop/image-hero-whitecup.jpg');
+    }
+    .hero__subscribe {
+        background-image: url('../assets/plan/desktop/image-hero-blackcup.jpg');
+    }
+}

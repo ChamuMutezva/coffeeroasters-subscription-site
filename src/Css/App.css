@@ -120,6 +120,15 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 720px) {
+  .nav {
+    padding: 0.5rem 2.5rem;
+  }
+
+  .nav__item {
+    padding: 0 1rem;
+  }
+}
 .modal {
   display: none;
   position: absolute;
@@ -229,6 +238,51 @@ a {
   border-radius: 6px;
 }
 
+@media screen and (min-width: 720px) {
+  .hero {
+    margin: 0px 2.5rem;
+  }
+
+  .hero__content {
+    width: 25rem;
+    text-align: left;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    text-align: left;
+    line-height: 48px;
+  }
+
+  .hero__summary {
+    text-align: left;
+  }
+
+  .hero__home {
+    background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+  }
+
+  .hero__about {
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+  }
+
+  .hero__subscribe {
+    background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg");
+  }
+}
+@media screen and (min-width: 1080px) {
+  .hero__home {
+    background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
+  }
+
+  .hero__about {
+    background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
+  }
+
+  .hero__subscribe {
+    background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg");
+  }
+}
 body {
   background-color: #FEFCF7;
   font-family: "Barlow", sans-serif;
