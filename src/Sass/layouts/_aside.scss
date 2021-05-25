@@ -1,0 +1,21 @@
+@use '../base';
+.aside {
+	margin: 0 1.5rem;
+	overflow: hidden;
+    background-color: base.$bg-dark-grey;
+    color: #FEFCF7;
+    border-radius: 10px;
+}
+.aside__container {
+    background-color: #505A66;
+}
+.aside__title {
+	font-size: 1.75rem;
+	text-align: center;
+	padding-top: 4rem;   
+}
+.aside__summary {
+	padding: 1rem;
+	text-align: center;
+	line-height: 25px;
+}
