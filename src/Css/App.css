@@ -131,6 +131,7 @@ a {
 
 .modal__open {
   display: block;
+  box-shadow: 0px 0px 90px 130px #FEFCF7;
 }
 
 .nav__list {
@@ -155,6 +156,10 @@ a {
     display: block;
     position: relative;
     top: 0;
+  }
+
+  .modal__open {
+    box-shadow: 0px 0px 0px 0px #FEFCF7;
   }
 
   .nav__list {
