@@ -32,14 +32,14 @@
 }
 
 .toggle__btn__close {
+	display: none;	
+}
+
+.toggle__btn__open {
 	display: block;
 	position: relative;
 	background-color: inherit;
 	border: none;
-}
-
-.toggle__btn__open {
-	display: none;
 }
 
 @include base.mQ(720px) {

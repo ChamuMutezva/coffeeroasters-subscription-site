@@ -1,31 +1,47 @@
 @use '../base';
+
+.works__wrapper {
+	margin-top: 5rem;
+}
+
 .works {
 	margin-top: -35rem;
 }
+
 .work__list {
-	padding: 0;
+	padding: 0 0.2rem;
 }
+
 .works__title {
 	text-align: center;
-    color: base.$tx-lt-grey;
-    font-size: 1.5rem;
-    line-height: 32px;
-    font-weight: 800;
+	color: base.$tx-lt-grey;
+	font-size: 1.5rem;
+	line-height: 32px;
+	font-weight: 800;
 }
+
 .work__item {
 	list-style: none;
 	padding: 0 1rem;
 	text-align: center;
+	margin-bottom: 3.5rem;
 }
+
 .work__item__title {
-    color: base.$bg-dark-grey;
+	color: base.$bg-dark-grey;
+	font-size: 1.75rem;
+	line-height: 32px;
+	margin-bottom: 1.5rem;
 }
+
 .work__num {
 	font-size: 4.5rem;
 	font-weight: 900;
 	display: block;
 	margin: auto;
 	text-align: center;
-    line-height: 72px;
-    color: #FDD6BA;
+	line-height: 72px;
+	color: #FDD6BA;
+	font-family: base.$heading-font;
+	margin-bottom: 2rem;
 }

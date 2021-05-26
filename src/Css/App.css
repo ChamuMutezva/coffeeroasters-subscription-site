@@ -77,6 +77,10 @@ a {
   line-height: 32px;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: "Fraunces", serif;
+}
+
 .nav {
   position: relative;
   display: flex;
@@ -110,14 +114,14 @@ a {
 }
 
 .toggle__btn__close {
+  display: none;
+}
+
+.toggle__btn__open {
   display: block;
   position: relative;
   background-color: inherit;
   border: none;
-}
-
-.toggle__btn__open {
-  display: none;
 }
 
 @media screen and (min-width: 720px) {
@@ -135,12 +139,12 @@ a {
   left: 0;
   top: 90px;
   width: 100%;
+  box-shadow: 0px 0px 90px 130px #FEFCF7;
   background-color: #FEFCF7;
 }
 
 .modal__open {
   display: block;
-  box-shadow: 0px 0px 90px 130px #FEFCF7;
 }
 
 .nav__list {
@@ -330,7 +334,7 @@ a {
 
 @media screen and (min-width: 720px) {
   .collection {
-    padding: 5.5rem 1.5rem;
+    padding: 6.5rem 1.5rem 7rem;
   }
 
   .collection__title {
@@ -431,12 +435,16 @@ a {
   padding: 0 2rem;
 }
 
+.works__wrapper {
+  margin-top: 5rem;
+}
+
 .works {
   margin-top: -35rem;
 }
 
 .work__list {
-  padding: 0;
+  padding: 0 0.2rem;
 }
 
 .works__title {
@@ -451,10 +459,14 @@ a {
   list-style: none;
   padding: 0 1rem;
   text-align: center;
+  margin-bottom: 3.5rem;
 }
 
 .work__item__title {
   color: #2C343E;
+  font-size: 1.75rem;
+  line-height: 32px;
+  margin-bottom: 1.5rem;
 }
 
 .work__num {
@@ -465,6 +477,8 @@ a {
   text-align: center;
   line-height: 72px;
   color: #FDD6BA;
+  font-family: "Fraunces", serif;
+  margin-bottom: 2rem;
 }
 
 .aside {
@@ -495,6 +509,19 @@ a {
   padding: 20rem;
 }
 
+@media screen and (min-width: 720px) {
+  .aside__container {
+    background-color: inherit;
+    max-width: 540px;
+    margin: auto;
+  }
+
+  .aside__title {
+    font-size: 2rem;
+    line-height: 48px;
+    margin-bottom: 1rem;
+  }
+}
 body {
   background-color: #FEFCF7;
   font-family: "Barlow", sans-serif;

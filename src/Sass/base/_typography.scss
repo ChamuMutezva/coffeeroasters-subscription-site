@@ -1,4 +1,8 @@
+@use './variables' as font;
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Fraunces:wght@300;400;500;600;700;800;900&display=swap');
 a {
     line-height: 32px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: font.$heading-font;
 }

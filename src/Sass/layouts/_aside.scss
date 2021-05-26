@@ -22,3 +22,16 @@
 .decoration {
 	padding: 20rem;
 }
+
+@include base.mQ(720px) {
+	.aside__container {
+		background-color: inherit;
+		max-width: 540px;
+		margin: auto;
+	}
+	.aside__title {
+		font-size: 2rem;		
+		line-height: 48px;
+		margin-bottom: 1rem;
+	}
+}

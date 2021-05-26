@@ -47,3 +47,9 @@
 .card__details {
     padding: 0 2rem;
 }
+
+@include base.mQ(720px) {
+    @include base.mQ(720px) {
+       
+    }
+}

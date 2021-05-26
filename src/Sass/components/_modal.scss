@@ -6,12 +6,12 @@
     left: 0;
     top: 90px;
     width: 100%;
+    box-shadow: 0px 0px 90px 130px base.$bg-lt-cream;
     background-color: base.$bg-lt-cream;
 }
 
 .modal__open {
-    display: block;
-    box-shadow: 0px 0px 90px 130px base.$bg-lt-cream;
+    display: block;   
 }
 
 .nav__list {
