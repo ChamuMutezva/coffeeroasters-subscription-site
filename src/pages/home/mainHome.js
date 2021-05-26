@@ -1,4 +1,5 @@
 import { Collections } from '../components/dataList';
+import WorkList from '../components/works'
 import Card from '../components/card'
 const MainHome = () => {
     console.log(Collections)
@@ -46,6 +47,9 @@ const MainHome = () => {
 
             <section className="works">
                 <h2 className="works__title">How it works</h2>
+                <div className="works__wrapper">
+                    <WorkList />
+                </div>
             </section>
         </main>
     )

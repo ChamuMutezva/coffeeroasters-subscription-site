@@ -435,12 +435,36 @@ a {
   margin-top: -35rem;
 }
 
+.work__list {
+  padding: 0;
+}
+
 .works__title {
   text-align: center;
   color: #83888F;
   font-size: 1.5rem;
   line-height: 32px;
   font-weight: 800;
+}
+
+.work__item {
+  list-style: none;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.work__item__title {
+  color: #2C343E;
+}
+
+.work__num {
+  font-size: 4.5rem;
+  font-weight: 900;
+  display: block;
+  margin: auto;
+  text-align: center;
+  line-height: 72px;
+  color: #FDD6BA;
 }
 
 .aside {
