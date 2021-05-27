@@ -86,3 +86,18 @@
     }
    
 }
+
+@include base.mQ(1080px){
+    .card__wrapper {        
+        flex-direction: column;
+    }
+    .cards {
+        display: flex;
+    }
+    .card {       
+        max-width: 350px;       
+    }
+    .card__summary, .card__title {
+        text-align: center;
+    }
+}

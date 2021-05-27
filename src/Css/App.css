@@ -472,6 +472,23 @@ h1, h2, h3, h4, h5 {
     top: -22rem;
   }
 }
+@media screen and (min-width: 1080px) {
+  .card__wrapper {
+    flex-direction: column;
+  }
+
+  .cards {
+    display: flex;
+  }
+
+  .card {
+    max-width: 350px;
+  }
+
+  .card__summary, .card__title {
+    text-align: center;
+  }
+}
 .works__wrapper {
   margin-top: 5rem;
 }
