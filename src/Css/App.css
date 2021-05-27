@@ -524,7 +524,7 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (min-width: 720px) {
   .works {
-    margin-top: -20rem;
+    margin-top: -16rem;
   }
 
   .work__list {
@@ -533,15 +533,46 @@ h1, h2, h3, h4, h5 {
 
   .works__wrapper {
     padding: 0 2.5rem;
+    margin-top: 6rem;
   }
 
   .work__item {
-    padding: 0 0.8rem;
+    padding: 1rem;
+    flex: 1 1 0;
   }
 
   .work__num,
 .work__item__title,
 .work__summary {
+    text-align: left;
+  }
+
+  .work__num {
+    position: relative;
+  }
+  .work__num::before {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    content: "";
+    border: 2px solid #0E8784;
+    top: -4rem;
+    border-radius: 50%;
+    left: 0;
+  }
+
+  .span21::after, .span22::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: #FDD6BA;
+    top: -3rem;
+    left: 31px;
+  }
+
+  .works__title {
+    padding: 0 3rem;
     text-align: left;
   }
 }

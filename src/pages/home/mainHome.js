@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Collections } from '../components/dataList';
 import WorkList from '../components/works'
 import Card from '../components/card'
@@ -49,7 +50,8 @@ const MainHome = () => {
                 <h2 className="works__title">How it works</h2>
                 <div className="works__wrapper">
                     <WorkList />
-                </div>
+                    <Link to="/subscribe" className={`anchor nav__item--btn hero--btn`}>Create your plan</Link>
+                </div>                              
             </section>
         </main>
     )
