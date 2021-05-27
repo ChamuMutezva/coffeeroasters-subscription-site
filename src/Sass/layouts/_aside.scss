@@ -49,3 +49,23 @@
 		padding: 1rem 0;
 	}
 }
+
+@include base.mQ(720px) {
+	.aside {
+		margin: 0 5rem;
+	}
+
+	.aside__title {
+		padding-top: 6rem;
+	}
+
+	.aside__summary {
+		padding: 1.5rem 0;
+	}
+}
+
+@include base.mQ(1080px) {
+	.decoration {
+		padding: 9rem;
+	}
+}

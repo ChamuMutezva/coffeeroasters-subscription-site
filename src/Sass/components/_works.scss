@@ -11,9 +11,11 @@
 .work__list {
 	padding: 0 0.2rem;
 }
-.work__summary {	
+
+.work__summary {
 	font-size: 0.9375rem;
 }
+
 .works__title {
 	text-align: center;
 	color: base.$tx-lt-grey;
@@ -63,7 +65,7 @@
 	}
 
 	.work__item {
-		padding: 1rem;		
+		padding: 1rem;
 		flex: 1 1 0;
 	}
 
@@ -72,8 +74,10 @@
 	.work__summary {
 		text-align: left;
 	}
+
 	.work__num {
 		position: relative;
+
 		&::before {
 			position: absolute;
 			width: 31px;
@@ -83,23 +87,45 @@
 			top: -4rem;
 			border-radius: 50%;
 			left: 0;
-		}	
+		}
 
 	}
-	.span21, .span22 {
+
+	.span21,
+	.span22 {
 		&::after {
 			position: absolute;
 			width: 100%;
 			height: 2px;
 			content: "";
 			background-color: #FDD6BA;
-			top: -3rem;			
+			top: -3rem;
 			left: 31px;
 		}
 	}
+
 	.works__title {
 		padding: 0 3rem;
 		text-align: left;
 	}
 
+}
+
+@include base.mQ(1080px) {
+	.works {
+		margin-top: -4rem;
+		padding: 0 10.3125rem;
+	}
+
+	.works__title {
+		padding: 0;
+	}
+
+	.works__wrapper {
+		padding: 0;
+	}
+
+	.work__item {
+		padding: 1rem 0;
+	}
 }

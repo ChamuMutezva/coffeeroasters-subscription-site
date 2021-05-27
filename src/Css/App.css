@@ -139,12 +139,12 @@ h1, h2, h3, h4, h5 {
   left: 0;
   top: 90px;
   width: 100%;
-  box-shadow: 0px 0px 90px 130px #FEFCF7;
   background-color: #FEFCF7;
 }
 
 .modal__open {
   display: block;
+  box-shadow: 0px 0px 90px 130px #FEFCF7;
 }
 
 .nav__list {
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5 {
   }
 
   .hero__content {
-    width: 25rem;
+    max-width: 25rem;
     text-align: left;
   }
 
@@ -275,6 +275,24 @@ h1, h2, h3, h4, h5 {
   }
 }
 @media screen and (min-width: 1080px) {
+  .hero {
+    margin: 0 5rem;
+  }
+
+  .hero__content {
+    padding: 7rem 0 7rem 4rem;
+    max-width: 35rem;
+  }
+
+  .hero__title {
+    font-size: 4.5rem;
+    line-height: 72px;
+  }
+
+  .hero__summary {
+    margin: 2.5rem 5rem 4rem auto;
+  }
+
   .hero__home {
     background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
   }
@@ -363,6 +381,10 @@ h1, h2, h3, h4, h5 {
   }
 }
 @media screen and (min-width: 1080px) {
+  .collection {
+    padding: 10rem 1.5rem 9.5rem;
+  }
+
   .collection__title {
     font-size: 9.375rem;
     line-height: 72px;
@@ -387,6 +409,7 @@ h1, h2, h3, h4, h5 {
 
   .collection__details {
     max-width: 255px;
+    margin-top: 6rem;
   }
 }
 .cards__list {
@@ -475,18 +498,40 @@ h1, h2, h3, h4, h5 {
 @media screen and (min-width: 1080px) {
   .card__wrapper {
     flex-direction: column;
+    padding: 3.8rem 0;
+  }
+
+  .card__img__wrapper {
+    flex: auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .cards {
     display: flex;
+    max-width: 1110px;
+    margin: auto;
+  }
+
+  .card__details {
+    padding: 2rem 4rem 0;
   }
 
   .card {
     max-width: 350px;
+    padding: 0;
   }
 
-  .card__summary, .card__title {
+  .card__summary,
+.card__title {
     text-align: center;
+  }
+
+  .cards__list {
+    top: -15rem;
   }
 }
 .works__wrapper {
@@ -578,7 +623,8 @@ h1, h2, h3, h4, h5 {
     left: 0;
   }
 
-  .span21::after, .span22::after {
+  .span21::after,
+.span22::after {
     position: absolute;
     width: 100%;
     height: 2px;
@@ -591,6 +637,24 @@ h1, h2, h3, h4, h5 {
   .works__title {
     padding: 0 3rem;
     text-align: left;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .works {
+    margin-top: -4rem;
+    padding: 0 10.3125rem;
+  }
+
+  .works__title {
+    padding: 0;
+  }
+
+  .works__wrapper {
+    padding: 0;
+  }
+
+  .work__item {
+    padding: 1rem 0;
   }
 }
 .aside {
@@ -640,6 +704,24 @@ h1, h2, h3, h4, h5 {
 
   .aside__summary {
     padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 720px) {
+  .aside {
+    margin: 0 5rem;
+  }
+
+  .aside__title {
+    padding-top: 6rem;
+  }
+
+  .aside__summary {
+    padding: 1.5rem 0;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .decoration {
+    padding: 9rem;
   }
 }
 body {

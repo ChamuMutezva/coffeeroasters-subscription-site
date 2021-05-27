@@ -74,6 +74,9 @@
     }
 }
 @include base.mQ(1080px) { 
+    .collection {
+        padding: 10rem 1.5rem 9.5rem;
+    }
     .collection__title {       
         font-size: 9.375rem;        
         line-height: 72px;
@@ -92,6 +95,7 @@
         text-align: center;
     }
     .collection__details {
-        max-width: 255px;     
+        max-width: 255px;  
+        margin-top: 6rem;   
     }
 }

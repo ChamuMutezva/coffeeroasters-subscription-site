@@ -84,20 +84,41 @@
     .cards__list {
         top: -22rem;
     }
-   
+
 }
 
-@include base.mQ(1080px){
-    .card__wrapper {        
+@include base.mQ(1080px) {
+    .card__wrapper {
         flex-direction: column;
+        padding: 3.8rem 0;
+    }
+    .card__img__wrapper {
+        flex: auto;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .cards {
         display: flex;
+        max-width: 1110px;
+        margin: auto;
     }
-    .card {       
-        max-width: 350px;       
+    .card__details {
+        padding: 2rem 4rem 0;
     }
-    .card__summary, .card__title {
+
+    .card {
+        max-width: 350px;
+        padding: 0;
+    }
+
+    .card__summary,
+    .card__title {
         text-align: center;
+    }
+    .cards__list {
+        top: -15rem;
     }
 }
