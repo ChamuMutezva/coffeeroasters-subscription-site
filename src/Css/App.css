@@ -435,6 +435,43 @@ h1, h2, h3, h4, h5 {
   padding: 0 2rem;
 }
 
+@media screen and (min-width: 720px) {
+  .card__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.2rem 0;
+  }
+
+  .card {
+    padding: 0.9rem 1rem 0.5rem;
+  }
+
+  .card__img__wrapper {
+    flex: 1 1 25%;
+  }
+
+  .card__img {
+    padding: 0;
+  }
+
+  .card__details {
+    flex: 1 1 75%;
+  }
+
+  .card__summary,
+.card__title {
+    text-align: left;
+  }
+
+  .card__summary {
+    padding: 0;
+  }
+
+  .cards__list {
+    top: -22rem;
+  }
+}
 .works__wrapper {
   margin-top: 5rem;
 }
@@ -445,6 +482,10 @@ h1, h2, h3, h4, h5 {
 
 .work__list {
   padding: 0 0.2rem;
+}
+
+.work__summary {
+  font-size: 0.9375rem;
 }
 
 .works__title {
@@ -481,6 +522,29 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 720px) {
+  .works {
+    margin-top: -20rem;
+  }
+
+  .work__list {
+    display: flex;
+  }
+
+  .works__wrapper {
+    padding: 0 2.5rem;
+  }
+
+  .work__item {
+    padding: 0 0.8rem;
+  }
+
+  .work__num,
+.work__item__title,
+.work__summary {
+    text-align: left;
+  }
+}
 .aside {
   margin: 0 1.5rem;
   overflow: hidden;
@@ -520,6 +584,14 @@ h1, h2, h3, h4, h5 {
     font-size: 2rem;
     line-height: 48px;
     margin-bottom: 1rem;
+  }
+
+  .decoration {
+    padding: 11rem;
+  }
+
+  .aside__summary {
+    padding: 1rem 0;
   }
 }
 body {

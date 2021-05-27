@@ -1,24 +1,29 @@
 @use '../base';
+
 .aside {
 	margin: 0 1.5rem;
 	overflow: hidden;
-    background-color: base.$bg-dark-grey;
-    color: #FEFCF7;
-    border-radius: 10px;
+	background-color: base.$bg-dark-grey;
+	color: #FEFCF7;
+	border-radius: 10px;
 }
+
 .aside__container {
-    background-color: #505A66;
+	background-color: #505A66;
 }
+
 .aside__title {
 	font-size: 1.75rem;
 	text-align: center;
-	padding-top: 4rem;   
+	padding-top: 4rem;
 }
+
 .aside__summary {
 	padding: 1rem;
 	text-align: center;
 	line-height: 25px;
 }
+
 .decoration {
 	padding: 20rem;
 }
@@ -29,9 +34,18 @@
 		max-width: 540px;
 		margin: auto;
 	}
+
 	.aside__title {
-		font-size: 2rem;		
+		font-size: 2rem;
 		line-height: 48px;
 		margin-bottom: 1rem;
+	}
+
+	.decoration {
+		padding: 11rem;
+	}
+
+	.aside__summary {
+		padding: 1rem 0;
 	}
 }

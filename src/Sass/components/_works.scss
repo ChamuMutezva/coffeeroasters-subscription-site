@@ -11,7 +11,9 @@
 .work__list {
 	padding: 0 0.2rem;
 }
-
+.work__summary {	
+	font-size: 0.9375rem;
+}
 .works__title {
 	text-align: center;
 	color: base.$tx-lt-grey;
@@ -44,4 +46,28 @@
 	color: #FDD6BA;
 	font-family: base.$heading-font;
 	margin-bottom: 2rem;
+}
+
+@include base.mQ(720px) {
+	.works {
+		margin-top: -20rem;
+	}
+
+	.work__list {
+		display: flex;
+	}
+
+	.works__wrapper {
+		padding: 0 2.5rem;
+	}
+
+	.work__item {
+		padding: 0 0.8rem;
+	}
+
+	.work__num,
+	.work__item__title,
+	.work__summary {
+		text-align: left;
+	}
 }

@@ -49,7 +49,40 @@
 }
 
 @include base.mQ(720px) {
-    @include base.mQ(720px) {
-       
+    .card__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.2rem 0;
     }
+
+    .card {
+        padding: 0.9rem 1rem 0.5rem;
+    }
+
+    .card__img__wrapper {
+        flex: 1 1 25%;
+    }
+
+    .card__img {
+        padding: 0;
+    }
+
+    .card__details {
+        flex: 1 1 75%;
+    }
+
+    .card__summary,
+    .card__title {
+        text-align: left;
+    }
+
+    .card__summary {
+        padding: 0;
+    }
+
+    .cards__list {
+        top: -22rem;
+    }
+   
 }
