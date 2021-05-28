@@ -57,7 +57,7 @@
 
 @include base.mQ(720px) {
 	.works {
-		margin-top: -16rem;
+		margin-top: -19rem;
 	}
 
 	.work__list {
@@ -67,6 +67,12 @@
 	.works__wrapper {
 		padding: 0 2.5rem;
 		margin-top: 6rem;
+	}
+
+	.works__wrapper--btn {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
 	}
 
 	.work__item {
@@ -110,7 +116,7 @@
 	}
 
 	.works__title {
-		padding: 0 3rem;
+		padding: 0 4rem;
 		text-align: left;
 	}
 
