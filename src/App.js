@@ -4,6 +4,7 @@ import HomePage from './pages/home/homePage'
 import AboutPage from './pages/about/aboutPage'
 import Navigation from './pages/components/nav'
 import SubscribePage from './pages/subscribe/subscribePage'
+import Footer from './pages/components/footer'
 import './Css/App.css'
 
 //Function to scroll to top of page when navigating 
@@ -39,6 +40,7 @@ function App() {
               <SubscribePage />
             </Route>
           </Switch>
+          <Footer />
         </Router>
       </div>
     </div>

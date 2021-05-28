@@ -50,7 +50,9 @@ const MainHome = () => {
                 <h2 className="works__title">How it works</h2>
                 <div className="works__wrapper">
                     <WorkList />
-                    <Link to="/subscribe" className={`anchor nav__item--btn hero--btn`}>Create your plan</Link>
+                    <div className="works__wrapper--btn">
+                        <Link to="/subscribe" className={`anchor nav__item--btn hero--btn`}>Create your plan</Link>
+                    </div>
                 </div>                              
             </section>
         </main>

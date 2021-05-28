@@ -49,6 +49,11 @@
 	font-family: base.$heading-font;
 	margin-bottom: 2rem;
 }
+.works__wrapper--btn {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 @include base.mQ(720px) {
 	.works {
@@ -100,7 +105,7 @@
 			content: "";
 			background-color: #FDD6BA;
 			top: -3rem;
-			left: 31px;
+			left: 27px;
 		}
 	}
 
@@ -114,22 +119,30 @@
 @include base.mQ(1080px) {
 	.works {
 		margin-top: -4rem;
-		padding: 0 10.3125rem;
+		//padding: 0 10.3125rem;
+	}
+	.work__list {
+		gap: 1.5rem;
 	}
 
 	.works__title {
-		padding: 0;
+		padding: 0 10rem;
 	}
 
 	.works__wrapper {
 		padding: 0;
+		max-width: 1045px;
+		margin: 6rem auto 0;
 	}
 
 	.work__item {
 		padding: 1rem 0;
 	}
 
-	.work__num {
-		
+	.span21,
+	.span22 {
+		&::after {
+			width: 100%;
+		}
 	}
 }

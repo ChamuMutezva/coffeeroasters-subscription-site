@@ -1,0 +1,29 @@
+@use '../base';
+.footer__wrapper {
+	margin-top: 9rem;
+	padding: 1.5rem;
+    
+}
+.footer {
+    background-color: base.$bg-dark-grey;
+    .logo__wrapper {        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    .nav__item--btn {
+       font-size: 0.75rem;
+       color: base.$tx-lt-grey;
+       text-transform: uppercase;
+    }
+}
+
+.social__list {
+	list-style: none;
+}
+.social {
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+}
