@@ -693,6 +693,9 @@ h1, h2, h3, h4, h5 {
   color: #83888F;
   text-transform: uppercase;
 }
+.footer .nav__item {
+  padding: 0rem;
+}
 
 .social__list {
   list-style: none;
@@ -702,6 +705,10 @@ h1, h2, h3, h4, h5 {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+}
+
+.social__wrapper {
+  padding: 1rem;
 }
 
 .aside {

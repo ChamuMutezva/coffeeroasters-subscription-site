@@ -17,6 +17,9 @@
        color: base.$tx-lt-grey;
        text-transform: uppercase;
     }
+    .nav__item {       
+        padding: 0rem;
+    }
 }
 
 .social__list {
@@ -26,4 +29,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: baseline;
+}
+.social__wrapper {
+	padding: 1rem;
 }
