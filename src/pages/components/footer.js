@@ -20,9 +20,21 @@ const Footer = () => {
                 <NavList />
                 <div className="social__wrapper">
                     <ul className="social">
-                        <li className="social__list"><img src={facebook}  alt="" /></li>
-                        <li className="social__list"><img src={twitter}  alt="" /></li>
-                        <li className="social__list"><img src={instagram}  alt="" /></li>
+                        <li className="social__list">
+                            <a href="/">
+                                <img src={facebook} alt="visit our facebook page" />
+                            </a>
+                        </li>
+                        <li className="social__list">
+                            <a href="/">
+                                <img src={twitter} alt="lets chat on twitter" />
+                            </a>
+                        </li>
+                        <li className="social__list">
+                            <a href="/">
+                                <img src={instagram} alt="meet us on instagram" />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

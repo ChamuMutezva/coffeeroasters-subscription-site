@@ -61,17 +61,22 @@
 @include base.mQ(1080px) {
     .footer {
         display: flex;
+        align-items: center;
 
         .logo__wrapper {
             flex: 0 1 30%;
             padding: 0;
         }
 
-        .footer .nav__list {
+        .nav__list {
             max-width: 100%;          
-            flex: 1 1 40%;
+            flex: 1 1 30%;
         }
 
+        .social {           
+            margin-right: 3rem;
+        }
+        
         .social__wrapper {           
             flex: 1 1 30%;
         }

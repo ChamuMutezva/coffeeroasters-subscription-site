@@ -735,14 +735,18 @@ h1, h2, h3, h4, h5 {
 @media screen and (min-width: 1080px) {
   .footer {
     display: flex;
+    align-items: center;
   }
   .footer .logo__wrapper {
     flex: 0 1 30%;
     padding: 0;
   }
-  .footer .footer .nav__list {
+  .footer .nav__list {
     max-width: 100%;
-    flex: 1 1 40%;
+    flex: 1 1 30%;
+  }
+  .footer .social {
+    margin-right: 3rem;
   }
   .footer .social__wrapper {
     flex: 1 1 30%;
