@@ -1,6 +1,9 @@
 import CoffeeManMobile from '../../assets/about/mobile/image-commitment.jpg'
 import CoffeeManMedium from '../../assets/about/tablet/image-commitment.jpg'
 import CoffeeManDesktop from '../../assets/about/desktop/image-commitment.jpg'
+
+
+
 const Commitment = () => {
     return(
         <section className="commitment">                
