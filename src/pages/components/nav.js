@@ -19,9 +19,7 @@ const Navigation = () => {
                     <img src={Logo} alt="well come to coffee roasters" />
                 </Link>
             </div>
-            <div className={`modal ${ShowMenu ? "modal__open" : ""}`}>
-                <NavList />
-            </div>
+           
             <div className="menu__control">
                 <button className={`hamburger ${ShowMenu ? "toggle__btn__close" : "toggle__btn__open"}`} onClick={hamburgerClick}>
                     <img src={Hamburger} alt="open the menu" />
@@ -30,6 +28,11 @@ const Navigation = () => {
                     <img src={Close} alt="close the menu" />
                 </button>
             </div>
+
+            <div className={`modal ${ShowMenu ? "modal__open" : ""}`}>
+                <NavList />
+            </div>
+
        </nav>
     )
 }

@@ -50,3 +50,9 @@
 		padding: 0 1rem;
 	}
 }
+
+@include base.mQ(1080px) {
+	.nav {
+		padding: 0.5rem 5rem;
+	}
+}

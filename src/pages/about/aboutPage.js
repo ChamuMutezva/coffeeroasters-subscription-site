@@ -1,8 +1,10 @@
 import HeaderAbout from './headerAbout'
+import MainAbout from './mainAbout'
 const AboutPage = () => {
-    return(
+    return (
         <>
-        <HeaderAbout />
+            <HeaderAbout />
+            <MainAbout />
         </>
     )
 }

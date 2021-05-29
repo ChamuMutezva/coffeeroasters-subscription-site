@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
-import { Collections } from '../components/dataList';
-import WorkList from '../components/works'
+import { Collections } from '../components/dataList'
 import Card from '../components/card'
+import WorksComponent from '../components/worksComponent'
 const MainHome = () => {
     console.log(Collections)
     return (
@@ -46,15 +45,7 @@ const MainHome = () => {
             </section>
             {/*end of cards - benefits for choosing us */}
 
-            <section className="works">
-                <h2 className="works__title">How it works</h2>
-                <div className="works__wrapper">
-                    <WorkList />
-                    <div className="works__wrapper--btn">
-                        <Link to="/subscribe" className={`anchor nav__item--btn hero--btn`}>Create your plan</Link>
-                    </div>
-                </div>                              
-            </section>
+            <WorksComponent />
         </main>
     )
 }

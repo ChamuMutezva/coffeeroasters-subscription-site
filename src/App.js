@@ -22,8 +22,7 @@ console.log(pathname)
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-header">
+    <div className="App">      
        
         <Router>
           <ScrollToTop />
@@ -42,7 +41,7 @@ function App() {
           </Switch>
           <Footer />
         </Router>
-      </div>
+      
     </div>
   );
 }
