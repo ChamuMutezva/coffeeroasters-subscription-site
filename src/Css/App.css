@@ -604,6 +604,18 @@ h1, h2, h3, h4, h5 {
   align-items: center;
 }
 
+.subscribe__works__wrapper {
+  border-radius: 10px;
+  background-color: #333D4B;
+  color: #FFFFFF;
+  margin-top: 7.2rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+.subscribe__works__wrapper .work__item__title {
+  color: #FFFFFF;
+}
+
 @media screen and (min-width: 720px) {
   .works {
     margin-top: -19rem;
@@ -664,6 +676,10 @@ h1, h2, h3, h4, h5 {
     padding: 0 4rem;
     text-align: left;
   }
+
+  .subscribe__works__wrapper {
+    padding-top: 8rem;
+  }
 }
 @media screen and (min-width: 1080px) {
   .works {
@@ -691,6 +707,10 @@ h1, h2, h3, h4, h5 {
   .span21::after,
 .span22::after {
     width: 100%;
+  }
+
+  .subscribe__works__wrapper {
+    padding: 8rem 4rem 4rem;
   }
 }
 .footer__wrapper {

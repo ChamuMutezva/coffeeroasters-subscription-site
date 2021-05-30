@@ -49,10 +49,25 @@
 	font-family: base.$heading-font;
 	margin-bottom: 2rem;
 }
-.works__wrapper--btn {	
+
+.works__wrapper--btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+//subscribe page only
+.subscribe__works__wrapper {
+	border-radius: 10px;
+	background-color: base.$bg-black;
+	color: base.$tx-white;
+	margin-top: 7.2rem;
+	padding-top: 3.2rem;
+	padding-bottom: 3.2rem;
+
+	.work__item__title {
+		color: base.$tx-white;
+	}
 }
 
 @include base.mQ(720px) {
@@ -120,6 +135,10 @@
 		text-align: left;
 	}
 
+	.subscribe__works__wrapper {
+		padding-top: 8rem;
+	}
+
 }
 
 @include base.mQ(1080px) {
@@ -127,6 +146,7 @@
 		margin-top: -4rem;
 		//padding: 0 10.3125rem;
 	}
+
 	.work__list {
 		gap: 1.5rem;
 	}
@@ -150,5 +170,8 @@
 		&::after {
 			width: 100%;
 		}
+	}
+	.subscribe__works__wrapper {
+		padding: 8rem 4rem 4rem;
 	}
 }
