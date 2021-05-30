@@ -896,6 +896,69 @@ h1, h2, h3, h4, h5 {
     text-align: left;
   }
 }
+.map {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.map__main__title {
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.map__list {
+  padding: 1.5rem;
+  margin: auto;
+  max-width: 327px;
+}
+
+.map__img {
+  margin: auto;
+}
+
+.map__title {
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #333D4B;
+  font-weight: 900;
+}
+
+.map__content {
+  margin-top: 3rem;
+}
+
+address {
+  font-family: "Barlow", sans-serif;
+}
+
+.map__address {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+@media screen and (min-width: 720px) {
+  .map__img {
+    margin-left: 0;
+  }
+
+  .map__list__container {
+    display: flex;
+  }
+
+  .map {
+    padding: 0 2.5rem;
+    text-align: left;
+    max-width: 1046px;
+    margin: auto;
+  }
+
+  .map__list {
+    padding: 1.5rem 0;
+    margin-left: 0;
+  }
+}
 .aside {
   margin: 0 1.5rem;
   overflow: hidden;
