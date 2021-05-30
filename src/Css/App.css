@@ -26,6 +26,14 @@ ol[role=list] {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -782,6 +790,31 @@ h1, h2, h3, h4, h5 {
   margin-top: 2rem;
 }
 
+.commitment__list__item:last-child {
+  position: relative;
+  margin-top: 12.4rem;
+  background-color: #333D4B;
+  background-image: url("../assets/about/mobile/bg-quality.png");
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 1.5rem 4rem;
+  color: white;
+  border-radius: 8px;
+}
+.commitment__list__item:last-child .commitment__title {
+  color: white;
+  font-size: 1.75rem;
+  line-height: 28px;
+}
+.commitment__list__item:last-child .commitment__img__container {
+  position: relative;
+  top: -7rem;
+}
+.commitment__list__item:last-child .commitment__details {
+  margin-top: -3.5rem;
+}
+
 @media screen and (min-width: 520px) {
   .commitment__img {
     width: 75%;
@@ -790,10 +823,35 @@ h1, h2, h3, h4, h5 {
 }
 @media screen and (min-width: 720px) {
   .commitment {
+    margin: 7.5rem 2.5rem 4rem;
+  }
+
+  .commitment__summary {
+    text-align: left;
+    padding: 0 2.3rem;
+    margin: 2rem auto;
+  }
+
+  .commitment__list__item {
     display: flex;
-    margin: 4rem 2.5rem;
     justify-content: space-around;
     align-items: center;
+  }
+  .commitment__list__item:last-child {
+    margin-top: 20.4rem;
+    padding: 2rem 1.5rem 3rem;
+    flex-direction: column;
+    background-image: url("../assets/about/tablet/bg-quality.png");
+  }
+  .commitment__list__item:last-child .commitment__summary {
+    text-align: center;
+    padding: 0 3.2rem;
+  }
+  .commitment__list__item:last-child .commitment__img__container {
+    top: -12rem;
+  }
+  .commitment__list__item:last-child .commitment__details {
+    margin-top: -8rem;
   }
 
   .commitment__details {
@@ -805,12 +863,6 @@ h1, h2, h3, h4, h5 {
     flex: 1 1 40%;
   }
 
-  .commitment__summary {
-    text-align: left;
-    padding: 0 2.5rem;
-    margin: 2rem auto;
-  }
-
   .commitment__img {
     width: 100%;
   }
@@ -818,8 +870,30 @@ h1, h2, h3, h4, h5 {
 @media screen and (min-width: 1080px) {
   .commitment {
     padding: 4rem 5rem;
-    max-width: 1110px;
+    max-width: 1280px;
     margin: auto;
+  }
+
+  .commitment__list__item:last-child {
+    margin-top: 18rem;
+    padding: 2rem 1.5rem 0rem;
+    flex-direction: row-reverse;
+    background-image: url("../assets/about/desktop/bg-quality.png");
+  }
+  .commitment__list__item:last-child .commitment__details {
+    margin-top: -9rem;
+    flex: 1 1 46%;
+  }
+  .commitment__list__item:last-child .commitment__img__container {
+    top: -7.5rem;
+    flex: 1 1 29%;
+  }
+  .commitment__list__item:last-child .commitment__title {
+    text-align: left;
+    margin-left: 2.8rem;
+  }
+  .commitment__list__item:last-child .commitment__summary {
+    text-align: left;
   }
 }
 .aside {

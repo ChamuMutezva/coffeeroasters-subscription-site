@@ -99,6 +99,7 @@ export const CommitmentData = [
     {
         id: '30',
         title: 'Our commitment',
+        alt: 'man making coffee',
         imgUrl: {
             mobile: CoffeeManMobile,
             tablet: CoffeeManMedium,
@@ -116,6 +117,7 @@ export const CommitmentData = [
     {
         id: '31',
         title: 'Uncompromising quality',
+        alt: 'coffee in white mug',
         imgUrl: {
             mobile: QualityMobile,
             tablet: QualityTablet,
