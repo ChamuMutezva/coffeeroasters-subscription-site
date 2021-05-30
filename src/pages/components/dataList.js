@@ -17,6 +17,11 @@ import QualityMobile from '../../assets/about/mobile/image-quality.jpg'
 import QualityTablet from '../../assets/about/tablet/image-quality.jpg'
 import QualityDesktop from '../../assets/about/desktop/image-quality.jpg'
 
+//location images
+import UK from '../../assets/about/desktop/illustration-uk.svg'
+import Canada from '../../assets/about/desktop/illustration-canada.svg'
+import Australia from '../../assets/about/desktop/illustration-australia.svg'
+
 export const Collections = [
     {
         id: '1',
@@ -128,6 +133,37 @@ export const CommitmentData = [
         coffee dry. Every bag of coffee is tagged with a roast date and batch number. Our goal is to roast 
         consistent, user-friendly coffee, so that brewing is easy and enjoyable.`,
     }
+]
+
+export const LocateUs = [
+    {
+        id: 41,
+        city: 'United Kingdom',
+        street: '68 Asfordby Rd',
+        town: 'Alcaston' ,
+        code: 'SY6 1YA',
+        phone: '+44 1241 918425',
+        locationMap: UK,
+    },
+    {
+        id: 42,
+        city: 'Canada',
+        street: '1528 Eglinton Avenue',
+        town: 'Toronto',
+        code: 'Ontario M4P 1A6',
+        phone: '+1 416 485 2997',
+        locationMap: Canada,
+    },
+    {
+        id: 43,
+        city: 'Australia',
+        street: '36 Swanston Street',
+        town: ' Kewell',
+        code: 'Victoria',
+        phone:'+61 4 9928 3629' ,
+        locationMap: Australia
+    }  
+      
 ]
 
 
