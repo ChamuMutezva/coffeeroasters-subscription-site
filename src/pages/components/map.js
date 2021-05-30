@@ -8,7 +8,7 @@ const LocationMap = () => {
                 {LocateUs.map(site => {
                     return <li key={site.id} className="map__list">
                         <div className="map__container">
-                            <img className="map__img" src={site.locationMap} alt="" />
+                            <img className="map__img" src={site.locationMap} alt={site.alt} />
                         </div>
                         <div className="map__content">
                             <address>

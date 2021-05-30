@@ -140,10 +140,11 @@ export const LocateUs = [
         id: 41,
         city: 'United Kingdom',
         street: '68 Asfordby Rd',
-        town: 'Alcaston' ,
+        town: 'Alcaston',
         code: 'SY6 1YA',
         phone: '+44 1241 918425',
         locationMap: UK,
+        alt: "our location in the united kingdom"
     },
     {
         id: 42,
@@ -153,6 +154,7 @@ export const LocateUs = [
         code: 'Ontario M4P 1A6',
         phone: '+1 416 485 2997',
         locationMap: Canada,
+        alt: "our location in canada"
     },
     {
         id: 43,
@@ -160,11 +162,144 @@ export const LocateUs = [
         street: '36 Swanston Street',
         town: ' Kewell',
         code: 'Victoria',
-        phone:'+61 4 9928 3629' ,
-        locationMap: Australia
-    }  
-      
+        phone: '+61 4 9928 3629',
+        locationMap: Australia,
+        alt: "our location in the australia"
+    }
+
+]
+
+export const PlanSteps = [
+    {
+        id: '01',
+        question: 'How do you drink your coffee?',
+        preferred: 'Preferences',
+        options: [
+            {
+                type: 'Capsule',
+                answer: 'Compatible with Nespresso systems and similar brewers',
+            },
+            {
+                type: 'Filter',
+                answer: 'For pour over or drip methods like Aeropress, Chemex, and V60',
+            },
+            {
+                type: 'Espresso',
+                answer: 'Dense and finely ground beans for an intense, flavorful experience'
+            }
+        ]
+
+    },
+    {
+        id: '02',
+        question: 'What type of coffee?',
+        preferred: 'Bean type',
+        options: [
+            {
+                type: 'Single origin',
+                answer: ' Distinct, high quality coffee from a specific family-owned farm',
+            },
+            {
+                type: 'Decaf',
+                answer: 'Just like regular coffee, except the caffeine has been removed',
+            },
+            {
+                type: 'Blended',
+                answer: 'Combination of two or three dark roasted beans of organic coffees'
+            }
+        ]
+
+    },
+    {
+        id: '03',
+        question: 'How much would you like?',
+        preferred: 'Quantity',
+        options: [
+            {
+                type: '250g',
+                answer: 'Perfect for the solo drinker. Yields about 12 delicious cups.',
+            },
+            {
+                type: '500g',
+                answer: 'Perfect option for a couple. Yields about 40 delectable cups.',
+            },
+            {
+                type: '1000g',
+                answer: 'Perfect for offices and events. Yields about 90 delightful cups.'
+            }
+        ]
+
+    },
+    {
+        id: '04',
+        question: 'Want us to grind them?',
+        preferred: 'Grind Option',
+        options: [
+            {
+                type: 'Wholebean',
+                answer: 'Best choice if you cherish the full sensory experience',
+            },
+            {
+                type: 'Filter',
+                answer: 'For drip or pour-over coffee methods such as V60 or Aeropress',
+            },
+            {
+                type: 'Cafetiére',
+                answer: 'Course ground beans specially suited for french press coffee'
+            }
+        ]
+
+    },
+    {
+        id: '05',
+        question: 'How often should we deliver?',
+        preferred: 'Deliveries',
+        options: [
+            {
+                type: 'Every week',
+                answer: '$14.00 per shipment. Includes free first-class shipping.',
+            },
+            {
+                type: 'Every 2 weeks',
+                answer: '$17.25 per shipment. Includes free priority shipping.',
+            },
+            {
+                type: 'Every month',
+                answer: '$22.50 per shipment. Includes free priority shipping.'
+            }
+        ]
+
+    },
+
 ]
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
