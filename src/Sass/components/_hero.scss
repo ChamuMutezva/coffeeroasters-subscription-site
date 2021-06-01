@@ -24,13 +24,13 @@
 .hero__title {
     font-size: 2.5rem;
     text-align: center;
-    line-height: 40px;
+    line-height: 1.2;
 }
 
 .hero__summary {
     font-size: .9375rem;
     text-align: center;
-    line-height: 25px;
+    line-height: 1.56;
     margin: 1.5rem auto 3rem;
 }
 
@@ -56,7 +56,7 @@
     .hero__title {
         font-size: 3rem;
         text-align: left;
-        line-height: 48px;
+       // line-height: 48px;
     }
     .hero__summary {       
         text-align: left;       
@@ -82,7 +82,7 @@
     }
     .hero__title {
         font-size: 4.5rem;    
-        line-height: 72px;    
+        line-height: 1.25;    
     }
     .hero__summary {        
         margin: 2.5rem 5rem 4rem auto;

@@ -7,7 +7,7 @@
 
 .map__main__title {
     font-size: 1.5rem;
-    line-height: 32px;
+    line-height: 1.5;
     color: base.$tx-black;
 }
 
@@ -23,7 +23,7 @@
 
 .map__title {
     font-size: 1.5rem;
-    line-height: 36px;
+    line-height: 1.5;
     color: base.$tx-black;
     font-weight: 900;
 }
@@ -39,7 +39,7 @@ address {
 .map__address {
     margin-top: 1rem;
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.5;
 }
 
 @include base.mQ(720px) {

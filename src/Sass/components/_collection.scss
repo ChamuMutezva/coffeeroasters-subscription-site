@@ -9,7 +9,7 @@
     font-size: 2.5rem;
     font-weight: 900;
     color: #83888f;
-    line-height: 72px;
+    line-height: 0.75;
     opacity: 0.4;
     padding-bottom: 1.5rem;
 }
@@ -36,7 +36,7 @@
 
 .collection__subtitle {
     font-size: 1.5rem;
-    line-height: 32px;
+    line-height: 2;
     color: #333D4B;
     padding-top: .5rem;
 }
@@ -78,8 +78,8 @@
         padding: 10rem 1.5rem 9.5rem;
     }
     .collection__title {       
-        font-size: 9.375rem;        
-        line-height: 72px;
+        font-size: 9.375rem;      
+        
     }
     .collection__item {      
         flex-direction: column;       
