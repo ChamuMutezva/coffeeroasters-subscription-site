@@ -11,7 +11,7 @@ const Plan = () => {
                     return <li key={plan.id}>
                         <div className="accordion__item">
                             <h3 className="accordion__header">
-                                <button>{plan.question}</button>
+                                <button className="accordion--btn" data-bs-toggle="collapse">{plan.question}</button>
                             </h3>
                             <div className="collapse plan__card">
                                 {plan.options.map(opt => {
