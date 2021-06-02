@@ -985,6 +985,7 @@ address {
   font-size: 1rem;
   align-items: center;
   justify-content: space-between;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
 .accordion--btn::after {
   content: "";
@@ -993,10 +994,26 @@ address {
   height: 1.25rem;
   background-repeat: no-repeat;
   flex-shrink: 0;
+  transition: transform 0.2s ease-in-out;
 }
-.accordion--btn .accordion--btn:not(.collapsed)::after {
+.accordion--btn:not(.collapsed)::after {
   background-image: url("../assets/plan/desktop/icon-arrow.svg");
   transform: rotate(-180deg);
+}
+
+.plan__card {
+  padding: 1rem 1.5rem;
+  margin: auto;
+}
+
+.plan__select {
+  background-color: #83888F;
+  margin: 1rem;
+}
+
+.collapse {
+  display: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
 
 .aside {

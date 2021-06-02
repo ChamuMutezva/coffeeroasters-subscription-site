@@ -1,13 +1,14 @@
 @use '../base';
 
 .accordion--btn {
-	position: relative;
-	display: flex;
-	width: 100%;
-	padding: 1rem 1.25rem;
-	font-size: 1rem;
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
     align-items: center;
     justify-content: space-between;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
 
     &::after {
         //position: absolute;
@@ -17,10 +18,27 @@
         height: 1.25rem;
         background-repeat: no-repeat;
         flex-shrink: 0;
+        transition: transform .2s ease-in-out;
     }
 
-    .accordion--btn:not(.collapsed)::after {
+
+    &:not(.collapsed)::after {
         background-image: url('../assets/plan/desktop/icon-arrow.svg');
         transform: rotate(-180deg);
     }
+
+}
+
+.plan__card {
+    padding: 1rem 1.5rem;
+    margin: auto;
+}
+.plan__select {
+	background-color: base.$tx-lt-grey;
+	margin: 1rem;
+}
+
+.collapse {
+    display: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
 }

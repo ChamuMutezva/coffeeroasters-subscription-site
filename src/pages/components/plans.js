@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import { PlanSteps } from '../components/dataList'
 const Plan = () => {
+    const [show, setShow] = useState(false)
     // const {name} = PlanSteps
     // console.log(PlanSteps)
-
+    const handleShow = () => {
+        setShow(!show)
+        console.log(show)
+    }
 
     return (
         <section>
@@ -11,11 +16,11 @@ const Plan = () => {
                     return <li key={plan.id}>
                         <div className="accordion__item">
                             <h3 className="accordion__header">
-                                <button className="accordion--btn" data-bs-toggle="collapse">{plan.question}</button>
+                                <button aria-expanded="true" className={`accordion--btn ${show ? "collapsed" : ""}`} onClick={handleShow} data-toggle="collapse" data-target={`collapse${plan.id}`} >{plan.question}</button>
                             </h3>
-                            <div className="collapse plan__card">
+                            <div id={`collapse${plan.id}`} className={`plan__card ${show ? "collapse" : ""}`}>
                                 {plan.options.map(opt => {
-                                    return <div className={`${plan.name}`} key={opt.id}>
+                                    return <div className={`plan__select ${plan.name}`} key={opt.id}>
                                         <h3 className={`wrapper__${plan.name}`}>
                                             {opt.type}
                                         </h3>
