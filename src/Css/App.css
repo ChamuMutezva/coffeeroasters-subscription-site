@@ -1012,14 +1012,21 @@ address {
 }
 
 .plan__select {
-  background-color: #F4F1EB;
+  position: relative;
   margin: 1rem;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
 }
-.plan__select:hover, .plan__select:focus {
+.plan__select input[type=radio] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.plan__select input[type=radio]:checked + label {
   background-color: #0E8784;
   color: #FFFFFF;
+}
+.plan__select input[type=radio]:focus + label {
+  border: 2px dashed #444;
 }
 
 .collapse {
@@ -1027,11 +1034,23 @@ address {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
 
+.radio__label {
+  background-color: #F4F1EB;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+.radio__label:hover {
+  background-color: #0E8784;
+  color: #FFFFFF;
+}
+
 .plan__section {
   margin-top: 3rem;
 }
 
-.wrapper__preferences {
+.plan__card__title {
   font-size: 1.5rem;
   padding-top: 0.5rem;
 }

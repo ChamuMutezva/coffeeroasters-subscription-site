@@ -36,21 +36,32 @@
 }
 
 .plan__card {
-  //  padding: 1rem 1.5rem;
+    //  padding: 1rem 1.5rem;
     margin: auto;
 }
 
 .plan__select {
-	background-color: #F4F1EB;
-	margin: 1rem;
-	padding: 1rem 1.5rem;
-	border-radius: 8px;
-   // max-width: 22rem;
+    position: relative;
+    margin: 1rem;
 
-    &:hover , &:focus {
+    //overflow: hidden;
+    // max-width: 22rem;
+    input[type="radio"] {
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+
+    input[type="radio"]:checked + label {
         background-color: base.$bg-green-btn;
         color: base.$tx-white;
     }
+
+    input[type="radio"]:focus + label {
+        border: 2px dashed #444;
+    }
+   
 }
 
 .collapse {
@@ -58,20 +69,34 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
 }
 
+.radio__label {
+    background-color: #F4F1EB;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: base.$bg-green-btn;
+        color: base.$tx-white;
+    }
+}
+
 .plan__section {
     margin-top: 3rem;
 }
 
-.wrapper__preferences {
-	font-size: 1.5rem;
+.plan__card__title {
+    font-size: 1.5rem;
     padding-top: .5rem;
 }
+
 .plan__card__content {
-	padding: .5rem 0;
+    padding: .5rem 0;
 }
 
 @include base.mQ(720px) {
-    .plan__card {       
+    .plan__card {
         display: flex;
     }
 }
