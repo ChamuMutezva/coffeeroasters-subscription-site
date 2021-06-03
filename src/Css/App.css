@@ -608,7 +608,7 @@ h1, h2, h3, h4, h5 {
   color: #FFFFFF;
   margin-top: 7.2rem;
   padding-top: 3.2rem;
-  padding-bottom: 3.2rem;
+  padding-bottom: 1.2rem;
 }
 .subscribe__works__wrapper .work__item__title {
   color: #FFFFFF;
@@ -982,10 +982,16 @@ address {
   display: flex;
   width: 100%;
   padding: 1rem 1.25rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   align-items: center;
   justify-content: space-between;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: #83888F;
+  text-align: left;
+  align-items: baseline;
 }
 .accordion--btn::after {
   content: "";
@@ -1002,13 +1008,18 @@ address {
 }
 
 .plan__card {
-  padding: 1rem 1.5rem;
   margin: auto;
 }
 
 .plan__select {
-  background-color: #83888F;
+  background-color: #F4F1EB;
   margin: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+.plan__select:hover, .plan__select:focus {
+  background-color: #0E8784;
+  color: #FFFFFF;
 }
 
 .collapse {
@@ -1016,6 +1027,24 @@ address {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
 
+.plan__section {
+  margin-top: 3rem;
+}
+
+.wrapper__preferences {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.plan__card__content {
+  padding: 0.5rem 0;
+}
+
+@media screen and (min-width: 720px) {
+  .plan__card {
+    display: flex;
+  }
+}
 .aside {
   margin: 0 1.5rem;
   overflow: hidden;

@@ -5,10 +5,16 @@
     display: flex;
     width: 100%;
     padding: 1rem 1.25rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-content: space-between;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    color: base.$tx-lt-grey;
+    text-align: left;
+    align-items: baseline;
 
     &::after {
         //position: absolute;
@@ -30,15 +36,42 @@
 }
 
 .plan__card {
-    padding: 1rem 1.5rem;
+  //  padding: 1rem 1.5rem;
     margin: auto;
 }
+
 .plan__select {
-	background-color: base.$tx-lt-grey;
+	background-color: #F4F1EB;
 	margin: 1rem;
+	padding: 1rem 1.5rem;
+	border-radius: 8px;
+   // max-width: 22rem;
+
+    &:hover , &:focus {
+        background-color: base.$bg-green-btn;
+        color: base.$tx-white;
+    }
 }
 
 .collapse {
     display: none;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+
+.plan__section {
+    margin-top: 3rem;
+}
+
+.wrapper__preferences {
+	font-size: 1.5rem;
+    padding-top: .5rem;
+}
+.plan__card__content {
+	padding: .5rem 0;
+}
+
+@include base.mQ(720px) {
+    .plan__card {       
+        display: flex;
+    }
 }
