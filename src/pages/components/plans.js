@@ -8,14 +8,43 @@ const Plan = () => {
         setShow(!show)
         console.log(show)
     }
-/*<div className={`plan__select ${plan.name}`} key={opt.id}>
-                                     <h3 className={`plan__card__title radio__big__text wrapper__${plan.name}`}>
-                                            {opt.type}
-                                        </h3>
-                                <p id={`${opt.sub}`} className={`plan__card__content radio__small__text ${opt.sub}`}>{opt.answer}</p>
-                                    </div> */
+
     return (
         <section className="plan__section" >
+            <aside className="plan__nav">
+                <ul className="plan__nav__list">
+                    <li className="plan__nav__item">
+                        <a href="#">
+                            <span>01</span>
+                            <span>Preferences</span>
+                        </a>
+                    </li>
+                    <li className="plan__nav__item">
+                        <a href="#">
+                            <span>02</span>
+                            <span>Bean Type</span>
+                        </a>
+                    </li>
+                    <li className="plan__nav__item">
+                        <a href="#">
+                            <span>03</span>
+                            <span>Quantity</span>
+                        </a>
+                    </li>
+                    <li className="plan__nav__item">
+                        <a href="#">
+                            <span>04</span>
+                            <span>Grind Option</span>
+                        </a>
+                    </li>
+                    <li className="plan__nav__item">
+                        <a href="#">
+                            <span>05</span>
+                            <span>Deliveries</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
             <ul className="accordion">
                 {PlanSteps.map(plan => {
                     return <li key={plan.id}>

@@ -57,7 +57,7 @@
 }
 
 //subscribe page only
-.subscribe__works__wrapper {
+.subscribe__works__wrapper {	
 	border-radius: 10px;
 	background-color: base.$bg-black;
 	color: base.$tx-white;
@@ -75,6 +75,9 @@
 		margin-top: -19rem;
 	}
 
+	.work__summary {
+		line-height: 1.7;
+	}
 	.work__list {
 		display: flex;
 	}
@@ -136,6 +139,7 @@
 	}
 
 	.subscribe__works__wrapper {
+		margin-top: 10rem;
 		padding-top: 8rem;
 	}
 

@@ -619,6 +619,10 @@ h1, h2, h3, h4, h5 {
     margin-top: -19rem;
   }
 
+  .work__summary {
+    line-height: 1.7;
+  }
+
   .work__list {
     display: flex;
   }
@@ -676,6 +680,7 @@ h1, h2, h3, h4, h5 {
   }
 
   .subscribe__works__wrapper {
+    margin-top: 10rem;
     padding-top: 8rem;
   }
 }
@@ -981,7 +986,7 @@ address {
   position: relative;
   display: flex;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.5rem;
   font-size: 1.5rem;
   align-items: center;
   justify-content: space-between;
@@ -1013,7 +1018,7 @@ address {
 
 .plan__select {
   position: relative;
-  margin: 1rem;
+  margin: 1rem 1.5rem;
 }
 .plan__select input[type=radio] {
   position: absolute;
@@ -1040,6 +1045,7 @@ address {
   flex-direction: column;
   padding: 1rem 1.5rem;
   border-radius: 8px;
+  min-height: 100%;
 }
 .radio__label:hover {
   background-color: #0E8784;
@@ -1053,10 +1059,21 @@ address {
 .plan__card__title {
   font-size: 1.5rem;
   padding-top: 0.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
 }
 
 .plan__card__content {
   padding: 0.5rem 0;
+}
+
+.plan__nav {
+  display: none;
+}
+
+.radio__small__text.espresso {
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 720px) {

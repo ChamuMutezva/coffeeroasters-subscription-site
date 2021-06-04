@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.5rem;
     font-size: 1.5rem;
     align-items: center;
     justify-content: space-between;
@@ -42,7 +42,7 @@
 
 .plan__select {
     position: relative;
-    margin: 1rem;
+    margin: 1rem 1.5rem;
 
     //overflow: hidden;
     // max-width: 22rem;
@@ -53,15 +53,15 @@
         opacity: 0;
     }
 
-    input[type="radio"]:checked + label {
+    input[type="radio"]:checked+label {
         background-color: base.$bg-green-btn;
         color: base.$tx-white;
     }
 
-    input[type="radio"]:focus + label {
+    input[type="radio"]:focus+label {
         border: 2px dashed #444;
     }
-   
+
 }
 
 .collapse {
@@ -75,6 +75,7 @@
     flex-direction: column;
     padding: 1rem 1.5rem;
     border-radius: 8px;
+    min-height: 100%; // to have same height on the list cards
 
     &:hover {
         background-color: base.$bg-green-btn;
@@ -89,10 +90,21 @@
 .plan__card__title {
     font-size: 1.5rem;
     padding-top: .5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    font-family: base.$heading-font;
 }
 
 .plan__card__content {
     padding: .5rem 0;
+}
+
+.plan__nav {
+    display: none;
+}
+
+.radio__small__text.espresso {
+    line-height: 1.5;
 }
 
 @include base.mQ(720px) {
