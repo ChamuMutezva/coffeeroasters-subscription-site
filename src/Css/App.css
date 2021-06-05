@@ -1017,6 +1017,8 @@ address {
 
 .plan__card {
   margin: auto;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
 }
 
 .plan__select {
@@ -1037,9 +1039,17 @@ address {
   border: 2px dashed #444;
 }
 
-.collapse {
+.collapse01,
+.collapse02,
+.collapse03,
+.collapse04,
+.collapse05 {
   display: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+.collapse__show {
+  animation-name: fadeInUp;
+  animation-duration: 3s;
 }
 
 .radio__label {
@@ -1079,10 +1089,38 @@ address {
   line-height: 1.5;
 }
 
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 720px) {
   .plan__card {
     gap: 1rem;
     display: flex;
+  }
+
+  .collapse01,
+.collapse02,
+.collapse03,
+.collapse04,
+.collapse05 {
+    display: none;
   }
 }
 @media screen and (min-width: 1080px) {

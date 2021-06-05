@@ -40,8 +40,9 @@
 }
 
 .plan__card {
-    //  padding: 1rem 1.5rem;
     margin: auto;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
 }
 
 .plan__select {
@@ -68,10 +69,20 @@
 
 }
 
-.collapse {
-    display: none;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+.collapse01,
+.collapse02,
+.collapse03,
+.collapse04,
+.collapse05 {
+    display: none;   
+    //visibility: hidden;
 }
+
+.collapse__show {
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+}
+
 
 .radio__label {
     background-color: #F4F1EB;
@@ -111,15 +122,47 @@
     line-height: 1.5;
 }
 
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
 @include base.mQ(720px) {
     .plan__card {
         gap: 1rem;
         display: flex;
     }
 
-    .accordion--btn {
-        // padding: 1rem 2.5rem;
+    .collapse01,
+    .collapse02,
+    .collapse03,
+    .collapse04,
+    .collapse05 {
+        display: none;
     }
+
 }
 
 @include base.mQ(1080px) {
