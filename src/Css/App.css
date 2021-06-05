@@ -986,7 +986,6 @@ address {
   position: relative;
   display: flex;
   width: 100%;
-  padding: 1rem 1.5rem;
   font-size: 1.5rem;
   align-items: center;
   justify-content: space-between;
@@ -1012,13 +1011,17 @@ address {
   transform: rotate(-180deg);
 }
 
+.accordion__item {
+  padding: 1rem 1.5rem;
+}
+
 .plan__card {
   margin: auto;
 }
 
 .plan__select {
   position: relative;
-  margin: 1rem 1.5rem;
+  margin: 1rem auto;
 }
 .plan__select input[type=radio] {
   position: absolute;
@@ -1078,7 +1081,69 @@ address {
 
 @media screen and (min-width: 720px) {
   .plan__card {
+    gap: 1rem;
     display: flex;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .plan__section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 10.3125rem;
+  }
+
+  .plan__nav {
+    display: block;
+    flex: 1 1 25%;
+  }
+
+  .accordion {
+    flex: 1 1 75%;
+  }
+
+  .plan__nav__list {
+    position: relative;
+    margin-top: 2.5rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* align-items: baseline; */
+    justify-content: space-between;
+    min-height: 22.25rem;
+  }
+  .plan__nav__list a {
+    text-decoration: none;
+  }
+  .plan__nav__list a:hover > .nav__item__num, .plan__nav__list a:focus > .nav__item__num {
+    color: #0E8784;
+  }
+  .plan__nav__list a:hover > .nav__item__text, .plan__nav__list a:focus > .nav__item__text {
+    color: #2C343E;
+  }
+
+  .plan__nav__item {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #2C343E;
+  }
+  .plan__nav__item::before {
+    position: absolute;
+    content: "";
+    width: 12rem;
+    height: 0.1rem;
+    background-color: #83888F;
+    bottom: -2rem;
+    left: 0;
+  }
+
+  .nav__item__num {
+    color: #83888F;
+  }
+
+  .nav__item__text {
+    color: #83888F;
   }
 }
 .aside {
@@ -1151,5 +1216,4 @@ address {
 body {
   background-color: #FEFCF7;
   font-family: "Barlow", sans-serif;
-  font-size: 16px;
 }

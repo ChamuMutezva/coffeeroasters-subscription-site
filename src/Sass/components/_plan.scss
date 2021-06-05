@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    padding: 1rem 1.5rem;
+    // padding: 1rem 1.5rem;
     font-size: 1.5rem;
     align-items: center;
     justify-content: space-between;
@@ -35,6 +35,10 @@
 
 }
 
+.accordion__item {
+    padding: 1rem 1.5rem;
+}
+
 .plan__card {
     //  padding: 1rem 1.5rem;
     margin: auto;
@@ -42,7 +46,7 @@
 
 .plan__select {
     position: relative;
-    margin: 1rem 1.5rem;
+    margin: 1rem auto;
 
     //overflow: hidden;
     // max-width: 22rem;
@@ -109,6 +113,79 @@
 
 @include base.mQ(720px) {
     .plan__card {
+        gap: 1rem;
         display: flex;
+    }
+
+    .accordion--btn {
+        // padding: 1rem 2.5rem;
+    }
+}
+
+@include base.mQ(1080px) {
+    .plan__section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 10.3125rem;
+    }
+
+    .plan__nav {
+        display: block;
+        flex: 1 1 25%;
+    }
+
+    .accordion {
+        flex: 1 1 75%;
+    }
+
+    .plan__nav__list {
+        position: relative;
+        margin-top: 2.5rem;
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        /* align-items: baseline; */
+        justify-content: space-between;
+        min-height: 22.25rem;
+
+        a {
+            text-decoration: none;
+
+            &:hover>.nav__item__num,
+            &:focus>.nav__item__num {
+                color: base.$bg-green-btn;
+            }
+
+            &:hover>.nav__item__text,
+            &:focus>.nav__item__text {
+                color: base.$bg-dark-grey;
+            }
+        }
+    }
+
+    .plan__nav__item {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: base.$bg-dark-grey;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 12rem;
+            height: 0.1rem;
+            background-color: base.$bg-lt-grey;
+            bottom: -2rem;
+            left: 0;
+        }
+    }
+
+    .nav__item__num {
+        color: base.$tx-lt-grey;
+    }
+
+    .nav__item__text {
+        color: base.$tx-lt-grey;
     }
 }
