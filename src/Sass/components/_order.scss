@@ -1,0 +1,58 @@
+@use '../base';
+
+.order {
+    margin: 5.5rem 0;
+}
+
+.order__summary {
+    background-color: base.$bg-dark-grey;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-family: base.$heading-font;
+}
+
+.order__title {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: base.$main-font;
+    color: base.$tx-white;
+    font-weight: 100;
+}
+
+.order__content {
+    color: base.$tx-white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: .5rem;
+    line-height: 2.2;
+}
+
+.ordered__item {
+    color: base.$tx-green;
+}
+
+.order--btn {
+    margin: 3rem auto 0;
+    display: block;
+    border: none;
+}
+
+@include base.mQ(720px) {
+
+    .order__summary {
+        padding: 2.5rem 1.5rem;
+    }
+
+}
+
+@include base.mQ(1080px) {
+
+    .order--btn {
+        margin-right: 0;
+    }
+
+    .order {
+        margin: 5.5rem 0 0;
+    }
+
+}

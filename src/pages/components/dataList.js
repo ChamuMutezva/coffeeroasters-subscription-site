@@ -174,7 +174,7 @@ export const PlanSteps = [
         id: '01',
         question: 'How do you drink your coffee?',
         preferred: 'Preferences',
-        name: 'preferences',
+        name: 'preference',
         options: [
             {
                 id: '20',
@@ -265,8 +265,8 @@ export const PlanSteps = [
             },
             {
                 id: '51',
-                sub: 'filter',
-                type: 'Filter',
+                sub: 'filtered',
+                type: 'Filtered',
                 answer: 'For drip or pour-over coffee methods such as V60 or Aeropress',
             },
             {

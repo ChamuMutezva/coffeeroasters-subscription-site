@@ -1011,8 +1011,16 @@ address {
   transform: rotate(-180deg);
 }
 
+.accordion__wrapper {
+  padding: 0 1.5rem;
+}
+
+.accordion__list__item {
+  margin-bottom: 3.125rem;
+}
+
 .accordion__item {
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
 }
 
 .plan__card {
@@ -1023,7 +1031,7 @@ address {
 
 .plan__select {
   position: relative;
-  margin: 1rem auto;
+  margin: 1.2rem auto;
 }
 .plan__select input[type=radio] {
   position: absolute;
@@ -1079,6 +1087,7 @@ address {
 
 .plan__card__content {
   padding: 0.5rem 0;
+  font-size: 1rem;
 }
 
 .plan__nav {
@@ -1110,9 +1119,26 @@ address {
   }
 }
 @media screen and (min-width: 720px) {
+  .accordion__wrapper {
+    padding: 0 2.5rem;
+  }
+
+  .accordion--btn {
+    font-size: 2rem;
+  }
+
   .plan__card {
+    margin-top: 2rem;
     gap: 1rem;
     display: flex;
+  }
+
+  .plan__section {
+    margin-top: 7.5rem;
+  }
+
+  .plan__card__content {
+    margin-top: 1rem;
   }
 
   .collapse01,
@@ -1122,13 +1148,20 @@ address {
 .collapse05 {
     display: none;
   }
+
+  .radio__label {
+    padding: 1rem 1.5rem 5.5rem;
+  }
 }
 @media screen and (min-width: 1080px) {
+  .plan__summary {
+    padding: 0 10.3125rem;
+  }
+
   .plan__section {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0 10.3125rem;
   }
 
   .plan__nav {
@@ -1136,7 +1169,7 @@ address {
     flex: 1 1 25%;
   }
 
-  .accordion {
+  .accordion__wrapper {
     flex: 1 1 75%;
   }
 
@@ -1184,6 +1217,63 @@ address {
     color: #83888F;
   }
 }
+.order {
+  margin: 5.5rem 0;
+}
+
+.order__summary {
+  background-color: #2C343E;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-family: "Fraunces", serif;
+}
+
+.order__title {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Barlow", sans-serif;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+
+.order__content {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  line-height: 2.2;
+}
+
+.ordered__item {
+  color: #0E8784;
+}
+
+.order--btn {
+  margin: 3rem auto 0;
+  display: block;
+  border: none;
+}
+
+@media screen and (min-width: 720px) {
+  .order__summary {
+    padding: 2.5rem 1.5rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .order--btn {
+    margin-right: 0;
+  }
+
+  .order {
+    margin: 5.5rem 0 0;
+  }
+}
+.modal__subscribe {
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
 .aside {
   margin: 0 1.5rem;
   overflow: hidden;
@@ -1251,6 +1341,10 @@ address {
     padding: 9rem;
   }
 }
+.main__subscribe {
+  position: relative;
+}
+
 body {
   background-color: #FEFCF7;
   font-family: "Barlow", sans-serif;
