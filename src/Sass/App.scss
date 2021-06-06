@@ -1,6 +1,7 @@
 @use './base';
 @use './components';
 @use './layouts';
+@use './pages';
 body {
     background-color: base.$bg-lt-cream;
     font-family: base.$main-font;

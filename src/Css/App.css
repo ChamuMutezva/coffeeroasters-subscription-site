@@ -1013,6 +1013,7 @@ address {
 
 .accordion__wrapper {
   padding: 0 1.5rem;
+  position: relative;
 }
 
 .accordion__list__item {
@@ -1269,9 +1270,56 @@ address {
   }
 }
 .modal__subscribe {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
   display: none;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: clamp(100px, 100%, 500px);
+  background-color: #979797;
+  min-height: 100vh;
+}
+
+.subscribe__show {
+  display: flex;
+}
+
+.subscribe__title__wrapper {
+  padding: 1.4rem 1rem;
+  background-color: #2C343E;
+}
+
+.subscribe__title {
+  font-size: 1.75rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.subscribe__content {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.9;
+}
+
+.subscribe__summary {
+  width: 90%;
+  margin: 2.5rem auto;
+  background-color: #FEFCF7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.subscribe__confirm {
+  padding: 0 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.9;
+}
+
+.checkout--btn {
+  margin: 0 auto 4rem;
 }
 
 .aside {
