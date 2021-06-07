@@ -1271,18 +1271,18 @@ address {
 }
 .modal__subscribe {
   position: fixed;
-  bottom: 0;
+  z-index: 6;
   display: none;
   flex-direction: column;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: clamp(100px, 80%, 500px);
+  width: clamp(100px, 87%, 500px);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   background-color: #FEFCF7;
   border-radius: 8px;
-  min-height: 80vh;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
 
 .subscribe__show {
@@ -1290,7 +1290,7 @@ address {
 }
 
 .subscribe__title__wrapper {
-  padding: 1.4rem 1rem;
+  padding: 1.3rem 1rem;
   background-color: #2C343E;
 }
 
@@ -1305,10 +1305,13 @@ address {
   font-size: 1.5rem;
   font-weight: 900;
   line-height: 1.9;
+  font-family: "Fraunces", serif;
+  color: #83888F;
 }
 
 .subscribe__summary {
   width: 100%;
+  color: #333D4B;
   overflow: hidden;
 }
 
@@ -1320,18 +1323,29 @@ address {
 
 .checkout--btn {
   margin: 0;
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .checkout {
   display: flex;
+  flex-direction: column;
   align-items: baseline;
   margin-top: 2rem;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.checkout span {
+
+.checkout__amount {
+  font-family: "Fraunces", serif;
   font-size: 1.5rem;
   font-weight: 900;
   text-align: right;
+  right: 1rem;
+  color: #333D4B;
 }
 
 .aside {
@@ -1403,6 +1417,21 @@ address {
 }
 .main__subscribe {
   position: relative;
+}
+
+.overlay {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  user-select: none;
+}
+
+.hide__overlay {
+  display: none;
 }
 
 body {

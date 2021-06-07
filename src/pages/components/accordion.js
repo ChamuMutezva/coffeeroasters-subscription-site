@@ -13,6 +13,7 @@ const Accordion = () => {
     const [radioData, setRadioData] = useState(initialState)
 
     const deliver = radioData.deliveries === "weekly" ? "Every week" : radioData.deliveries === "fortnight" ? "Every 2 weeks" : "Monthly"
+    const shippingCost = radioData.deliveries === "weekly" ? "$14.00" : radioData.deliveries === "fortnight" ? "$17.25" : "$22.50"
     const handleShow = (evt) => {
         setShow(!show)
 
@@ -42,8 +43,11 @@ const Accordion = () => {
         if (typeof (radioData.preference === null)) {
             console.log("enter data")
         }
-        document.body.classList.add("hide__scroll")
+       // document.body.classList.add("hide__scroll")
+       const overlay = document.querySelector(".overlay")
         const modal = document.querySelector(".modal__subscribe")
+        overlay.classList.remove("hide__overlay")
+
         modal.classList.toggle("subscribe__show")
         console.log(evt)
         evt.preventDefault()
@@ -52,8 +56,11 @@ const Accordion = () => {
     //handle subscribe form
     const handleSubscribe = (evt) => {
          document.body.classList.remove("hide__scroll")
+         const overlay = document.querySelector(".overlay")
         const modal = document.querySelector(".modal__subscribe")
         modal.classList.toggle("subscribe__show")
+        overlay.classList.add("hide__overlay")
+
         evt.preventDefault()
     }
     return (
@@ -119,12 +126,14 @@ const Accordion = () => {
                         is off. Subscription discount codes can also be redeemed at the checkout.
                      </p>
                     <div className="checkout">
-                        <span>$14 / mo</span><button type="submit" className="hero--btn order--btn checkout--btn">Checkout </button>
+                        <span className="checkout__amount">{shippingCost}/mo</span><button type="submit" className="hero--btn order--btn checkout--btn">Checkout </button>
                     </div>
 
                 </form>
 
             </div>
+
+            <div className="overlay hide__overlay"></div>
         </div>
 
     )
