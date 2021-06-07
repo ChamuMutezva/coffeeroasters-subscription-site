@@ -42,7 +42,7 @@ const Accordion = () => {
         if (typeof (radioData.preference === null)) {
             console.log("enter data")
         }
-       // document.body.classList.add("hide__scroll")
+        document.body.classList.add("hide__scroll")
         const modal = document.querySelector(".modal__subscribe")
         modal.classList.toggle("subscribe__show")
         console.log(evt)
@@ -51,7 +51,7 @@ const Accordion = () => {
 
     //handle subscribe form
     const handleSubscribe = (evt) => {
-       // document.body.classList.remove("hide__scroll")
+         document.body.classList.remove("hide__scroll")
         const modal = document.querySelector(".modal__subscribe")
         modal.classList.toggle("subscribe__show")
         evt.preventDefault()
@@ -71,7 +71,7 @@ const Accordion = () => {
                                 {plan.options.map(opt => {
                                     return <div className={`plan__select ${plan.name}`} key={opt.id}>
                                         <input type="radio" name={plan.name} id={opt.sub}
-                                         onChange={onChange} />
+                                            onChange={onChange} />
                                         <label className="radio__label" htmlFor={opt.sub}>
                                             <span className={`plan__card__title radio__big__text wrapper__${plan.name}`}>{opt.type}</span>
                                             <span className={`plan__card__content radio__small__text ${opt.sub}`}>{opt.answer}</span>
@@ -118,9 +118,12 @@ const Accordion = () => {
                         Is this correct? You can proceed to checkout or go back to plan selection if something
                         is off. Subscription discount codes can also be redeemed at the checkout.
                      </p>
-                     <button type="submit" className="hero--btn order--btn checkout--btn">Checkout $14 / mo</button>
+                    <div className="checkout">
+                        <span>$14 / mo</span><button type="submit" className="hero--btn order--btn checkout--btn">Checkout </button>
+                    </div>
+
                 </form>
-  
+
             </div>
         </div>
 

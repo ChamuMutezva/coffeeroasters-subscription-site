@@ -1277,9 +1277,12 @@ address {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: clamp(100px, 100%, 500px);
-  background-color: #979797;
-  min-height: 100vh;
+  width: clamp(100px, 80%, 500px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  background-color: #FEFCF7;
+  border-radius: 8px;
+  min-height: 80vh;
+  overflow: hidden;
 }
 
 .subscribe__show {
@@ -1305,10 +1308,7 @@ address {
 }
 
 .subscribe__summary {
-  width: 90%;
-  margin: 2.5rem auto;
-  background-color: #FEFCF7;
-  border-radius: 8px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -1319,7 +1319,19 @@ address {
 }
 
 .checkout--btn {
-  margin: 0 auto 4rem;
+  margin: 0;
+}
+
+.checkout {
+  display: flex;
+  align-items: baseline;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.checkout span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: right;
 }
 
 .aside {

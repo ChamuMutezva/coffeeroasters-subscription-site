@@ -8,11 +8,12 @@
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
-	//width: clamp(100px, 80%, 500px);
-	width: clamp(100px, 100%, 500px);
-	background-color: #979797;
-	//border-radius: 8px;
-	min-height: 100vh;
+	width: clamp(100px, 80%, 500px);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	background-color: base.$bg-lt-cream;
+	border-radius: 8px;
+	min-height: 80vh;
+	overflow: hidden;
 }
 
 .subscribe__show {
@@ -39,10 +40,9 @@
 }
 
 .subscribe__summary {
-	width: 90%;
-	margin: 2.5rem auto;
-	background-color: base.$bg-lt-cream;
-	border-radius: 8px;
+	width: 100%;
+	//margin: 2.5rem auto;
+	
 	overflow: hidden;
 }
 
@@ -53,5 +53,19 @@
 }
 
 .checkout--btn {
-	margin: 0 auto 4rem;
+	margin: 0;
+}
+
+.checkout {
+	display: flex;
+	align-items: baseline;
+	margin-top: 2rem;
+	justify-content: center;
+
+	span {
+		font-size: 1.5rem;
+		font-weight: 900;
+		//position: absolute;
+		text-align: right;
+	}
 }
