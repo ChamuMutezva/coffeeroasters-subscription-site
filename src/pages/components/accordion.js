@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { PlanSteps } from '../components/dataList'
 const Accordion = () => {
     const initialState = {
@@ -11,6 +11,22 @@ const Accordion = () => {
 
     const [show, setShow] = useState(false)
     const [radioData, setRadioData] = useState(initialState)
+
+
+    useEffect(() => {
+        console.log("radio data changes")
+
+        const orderBtn = document.querySelector(".order--btn")
+
+
+        if (radioData.preference !== null && radioData.bean !== null &&
+            radioData.quantity !== null && radioData.grind !== null &&
+            radioData.deliveries !== null) {
+            orderBtn.classList.remove("disabled")
+        } else {
+            orderBtn.classList.add("disabled")
+        }
+    }, [radioData])
 
     const deliver = radioData.deliveries === "weekly" ? "Every week" : radioData.deliveries === "fortnight" ? "Every 2 weeks" : radioData.deliveries === 'monthly' ? "Monthly" : "_____"
     const shippingCost = radioData.deliveries === "weekly" ? "$14.00" : radioData.deliveries === "fortnight" ? "$17.25" : "$22.50"
@@ -35,24 +51,13 @@ const Accordion = () => {
     //radio buttons to make the selection
     const onChange = (evt) => {
 
-        const orderBtn = document.querySelector(".order--btn")
-
-        
-
         console.log(evt.target)
         const { name, id } = evt.target
         setRadioData({ ...radioData, [name]: id })
         console.log(name)
         console.log(id)
-        console.log(radioData)       
+        console.log(radioData)
 
-        if (radioData.preference !== null && radioData.bean !== null &&
-            radioData.quantity !== null && radioData.grind !== null &&
-            radioData.deliveries !== null) {            
-            orderBtn.classList.remove("disabled")
-        } else {
-            orderBtn.classList.add("disabled")
-        }
     }
 
     //form submission - to open the subscribe modal panel
