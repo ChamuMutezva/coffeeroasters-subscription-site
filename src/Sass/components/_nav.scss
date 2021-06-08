@@ -7,6 +7,23 @@
 	padding: 2rem 1.5rem;
 }
 
+.nav__list {
+    text-align: center;
+    padding: 0;
+}
+
+.nav__item--btn {
+    text-decoration: none;
+    color: base.$tx-black;
+}
+
+.nav__item {
+    list-style: none;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
 .logo__wrapper {
 	flex: 1 1 70%;
 }
@@ -42,10 +59,29 @@
 	border: none;
 }
 
+
 @include base.mQ(720px) {
 	.nav {		
 		padding: 0.5rem 2.5rem;
 	}
+
+	.nav__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .nav__item--btn {
+        font-size: .75rem;
+        color: base.$tx-lt-grey;
+        letter-spacing: 0.92px;
+        line-height: 1;
+
+		&:hover , &:focus {
+			color: base.$bg-black;
+		}
+    }
 	.nav__item {		
 		padding: 0 1rem;
 	}

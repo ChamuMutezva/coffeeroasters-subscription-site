@@ -20,6 +20,9 @@
         font-size: 0.75rem;
         color: base.$tx-lt-grey;
         text-transform: uppercase;
+        &:hover, &:focus {
+            color: base.$tx-white;
+        }
     }
 
     .nav__list {

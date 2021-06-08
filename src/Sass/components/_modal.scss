@@ -14,22 +14,6 @@
     box-shadow: 0px 26px 40px 80px base.$bg-lt-cream;
 }
 
-.nav__list {
-    text-align: center;
-    padding: 0;
-}
-
-.nav__item--btn {
-    text-decoration: none;
-    color: base.$tx-black;
-}
-
-.nav__item {
-    list-style: none;
-    font-weight: 900;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
 
 @include base.mQ(720px) {
     .modal {
@@ -42,20 +26,7 @@
     .modal__open {       
         box-shadow: 0px 0px 0px 0px base.$bg-lt-cream;
     }
-
-    .nav__list {
-        display: flex;
-        align-items: center;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-    }
-
-    .nav__item--btn {
-        font-size: .75rem;
-        color: base.$tx-lt-grey;
-        letter-spacing: 0.92px;
-        line-height: 1;
-    }
+    
 
     .menu__control {
         display: none;

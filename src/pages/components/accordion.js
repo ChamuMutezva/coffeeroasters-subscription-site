@@ -134,7 +134,7 @@ const Accordion = () => {
                     </div>
                     <p className="subscribe__content">
                         “I drink my coffee as
-                             <span className="ordered__item"> {radioData.preference} </span>, with a
+                             <span className="ordered__item"> {radioData.preference}</span>, with a
                              <span className="ordered__item"> {radioData.bean} </span> type of bean.
                              <span className="ordered__item"> {radioData.quantity} </span> ground ala
                              <span className="ordered__item"> {radioData.grind} </span>, sent to me

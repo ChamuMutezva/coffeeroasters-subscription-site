@@ -97,6 +97,23 @@ h1, h2, h3, h4, h5 {
   padding: 2rem 1.5rem;
 }
 
+.nav__list {
+  text-align: center;
+  padding: 0;
+}
+
+.nav__item--btn {
+  text-decoration: none;
+  color: #333D4B;
+}
+
+.nav__item {
+  list-style: none;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
 .logo__wrapper {
   flex: 1 1 70%;
 }
@@ -137,6 +154,23 @@ h1, h2, h3, h4, h5 {
     padding: 0.5rem 2.5rem;
   }
 
+  .nav__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  .nav__item--btn {
+    font-size: 0.75rem;
+    color: #83888F;
+    letter-spacing: 0.92px;
+    line-height: 1;
+  }
+  .nav__item--btn:hover, .nav__item--btn:focus {
+    color: #333D4B;
+  }
+
   .nav__item {
     padding: 0 1rem;
   }
@@ -160,23 +194,6 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0px 26px 40px 80px #FEFCF7;
 }
 
-.nav__list {
-  text-align: center;
-  padding: 0;
-}
-
-.nav__item--btn {
-  text-decoration: none;
-  color: #333D4B;
-}
-
-.nav__item {
-  list-style: none;
-  font-weight: 900;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-
 @media screen and (min-width: 720px) {
   .modal {
     display: block;
@@ -186,20 +203,6 @@ h1, h2, h3, h4, h5 {
 
   .modal__open {
     box-shadow: 0px 0px 0px 0px #FEFCF7;
-  }
-
-  .nav__list {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-  }
-
-  .nav__item--btn {
-    font-size: 0.75rem;
-    color: #83888F;
-    letter-spacing: 0.92px;
-    line-height: 1;
   }
 
   .menu__control {
@@ -253,6 +256,11 @@ h1, h2, h3, h4, h5 {
   line-height: 25px;
   padding: 1rem 2.6rem;
   border-radius: 6px;
+}
+.hero--btn:hover, .hero--btn:focus {
+  background-color: #1ae7e2;
+  color: white;
+  outline: none;
 }
 
 @media screen and (min-width: 720px) {
@@ -734,6 +742,9 @@ h1, h2, h3, h4, h5 {
   font-size: 0.75rem;
   color: #83888F;
   text-transform: uppercase;
+}
+.footer .nav__item--btn:hover, .footer .nav__item--btn:focus {
+  color: #FFFFFF;
 }
 .footer .nav__list {
   max-width: 283px;

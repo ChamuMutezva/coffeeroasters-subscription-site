@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use '../base';
 .hero {   
     background-size: cover;
@@ -43,6 +44,12 @@
 	line-height: 25px;
 	padding: 1rem 2.6rem;
     border-radius: 6px;
+
+    &:hover, &:focus {
+        background-color: color.scale(base.$bg-green-btn, $lightness : 30%);
+        color: white;
+        outline: none;
+    }
 }
 
 @include base.mQ(720px) {
