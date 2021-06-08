@@ -29,16 +29,16 @@
 
 .subscribe__title {
 	font-size: 1.75rem;
-	line-height: 1.6;
+	line-height: 1.1;
 	color: white;
 
 }
 
 .subscribe__content {
-	padding: 1rem 1.5rem;
-	font-size: 1.5rem;
+	padding: 1rem 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 900;
-	line-height: 1.9;
+	line-height: 1.3;
 	font-family: base.$heading-font;
 	color: base.$tx-lt-grey;
 }
@@ -52,8 +52,8 @@
 
 .subscribe__confirm {
 	padding: 0 1.5rem;
-	font-size: 0.9375rem;
-	line-height: 1.9;
+	font-size: 0.75rem;
+	line-height: 1.5;
 }
 
 .checkout--btn {
@@ -68,7 +68,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: baseline;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -82,4 +82,9 @@
 	//position: absolute;
 	right: 1rem;
 	color: base.$tx-black;
+}
+
+.disabled {
+	background-color: #e2dedb;
+	pointer-events: none;
 }

@@ -3,17 +3,20 @@ import { PlanSteps } from '../components/dataList'
 const Accordion = () => {
     const initialState = {
         preference: null,
-        bean: "",
-        quantity: "",
-        grind: "",
-        deliveries: "",
+        bean: null,
+        quantity: null,
+        grind: null,
+        deliveries: null,
     }
 
     const [show, setShow] = useState(false)
     const [radioData, setRadioData] = useState(initialState)
 
-    const deliver = radioData.deliveries === "weekly" ? "Every week" : radioData.deliveries === "fortnight" ? "Every 2 weeks" : "Monthly"
+    const deliver = radioData.deliveries === "weekly" ? "Every week" : radioData.deliveries === "fortnight" ? "Every 2 weeks" : radioData.deliveries === 'monthly' ? "Monthly" : "_____"
     const shippingCost = radioData.deliveries === "weekly" ? "$14.00" : radioData.deliveries === "fortnight" ? "$17.25" : "$22.50"
+
+    //toggle - accordion control centre 
+    //click the question to reveal and close the answers 
     const handleShow = (evt) => {
         setShow(!show)
 
@@ -29,40 +32,51 @@ const Accordion = () => {
         targetDiv.classList.toggle("collapse__show")
     }
 
+    //radio buttons to make the selection
     const onChange = (evt) => {
+
+        const orderBtn = document.querySelector(".order--btn")
+
+        
+
         console.log(evt.target)
         const { name, id } = evt.target
         setRadioData({ ...radioData, [name]: id })
         console.log(name)
         console.log(id)
-        console.log(radioData)
+        console.log(radioData)       
+
+        if (radioData.preference !== null && radioData.bean !== null &&
+            radioData.quantity !== null && radioData.grind !== null &&
+            radioData.deliveries !== null) {            
+            orderBtn.classList.remove("disabled")
+        } else {
+            orderBtn.classList.add("disabled")
+        }
     }
 
-    //form submission
+    //form submission - to open the subscribe modal panel
     const handleSubmit = (evt) => {
-        if (typeof (radioData.preference === null)) {
-            console.log("enter data")
-        }
-       // document.body.classList.add("hide__scroll")
-       const overlay = document.querySelector(".overlay")
-        const modal = document.querySelector(".modal__subscribe")
-        overlay.classList.remove("hide__overlay")
 
+        const overlay = document.querySelector(".overlay")
+        const modal = document.querySelector(".modal__subscribe")
+
+        overlay.classList.remove("hide__overlay")
         modal.classList.toggle("subscribe__show")
         console.log(evt)
         evt.preventDefault()
     }
 
-    //handle subscribe form
+    //handle subscribe form - checkout modal
     const handleSubscribe = (evt) => {
-         document.body.classList.remove("hide__scroll")
-         const overlay = document.querySelector(".overlay")
+        const overlay = document.querySelector(".overlay")
         const modal = document.querySelector(".modal__subscribe")
         modal.classList.toggle("subscribe__show")
         overlay.classList.add("hide__overlay")
 
         evt.preventDefault()
     }
+
     return (
 
         <div className="accordion__wrapper">
@@ -104,7 +118,7 @@ const Accordion = () => {
                              <span className="ordered__item"> {deliver}</span>.”
                         </p>
                     </div>
-                    <button type="submit" className="hero--btn order--btn">Create your plan</button>
+                    <button type="submit" className="hero--btn order--btn disabled">Create your plan</button>
                 </form>
             </div>
 
