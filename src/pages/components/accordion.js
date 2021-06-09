@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { PlanSteps } from '../components/dataList'
+import ModalCheckout from '../components/modalCheckout'
 const Accordion = () => {
     const initialState = {
         preference: null,
@@ -127,6 +128,10 @@ const Accordion = () => {
                 </form>
             </div>
 
+            <ModalCheckout onSubmit={handleSubscribe} prefer={radioData.preference}
+                bean={radioData.bean} quantity={radioData.quantity} grind={radioData.grind}
+                deliver={deliver} shipping={shippingCost} />
+            {/*
             <div className="modal__subscribe">
                 <form className="subscribe__summary" onSubmit={handleSubscribe}>
                     <div className="subscribe__title__wrapper">
@@ -151,6 +156,7 @@ const Accordion = () => {
                 </form>
 
             </div>
+            */}
 
             <div className="overlay hide__overlay"></div>
         </div>
