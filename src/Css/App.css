@@ -1288,7 +1288,7 @@ address {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: clamp(100px, 87%, 500px);
+  width: clamp(100px, 95%, 500px);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   background-color: #FEFCF7;
   border-radius: 8px;
@@ -1313,9 +1313,9 @@ address {
 
 .subscribe__content {
   padding: 1rem 1.2rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  line-height: 1.3;
+  line-height: 1.4;
   font-family: "Fraunces", serif;
   color: #83888F;
 }
@@ -1328,7 +1328,7 @@ address {
 
 .subscribe__confirm {
   padding: 0 1.5rem;
-  font-size: 0.75rem;
+  font-size: 0.9375rem;
   line-height: 1.5;
 }
 
