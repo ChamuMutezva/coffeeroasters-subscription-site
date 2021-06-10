@@ -12,7 +12,7 @@ import './Css/App.css'
 //be at the bottom of the page
 const ScrollToTop = () => {
   const { pathname } = useLocation();
-console.log(pathname)
+  console.log(pathname)
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -20,28 +20,30 @@ console.log(pathname)
   return null;
 }
 
-function App() {
+function App(props) {
+
+  
   return (
-    <div className="App">      
-       
-        <Router>
-          <ScrollToTop />
-          <Navigation />
-          <Switch>
-         
-            <Route exact path='/'>
-              <HomePage />
-            </Route>
-            <Route path='/about'>
-              <AboutPage />
-            </Route>
-            <Route path='/subscribe'>
-              <SubscribePage />
-            </Route>
-          </Switch>
-          <Footer />
-        </Router>
-      
+    <div className="App">
+
+      <Router>
+        <ScrollToTop />
+        <Navigation  />
+        <Switch>
+
+          <Route exact path='/'>
+            <HomePage />
+          </Route>
+          <Route path='/about'>
+            <AboutPage />
+          </Route>
+          <Route path='/subscribe'>
+            <SubscribePage />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
+
     </div>
   );
 }
