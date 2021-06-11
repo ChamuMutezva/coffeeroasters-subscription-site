@@ -1080,9 +1080,9 @@ address {
   border-radius: 8px;
   min-height: 100%;
 }
-.radio__label:hover {
-  background-color: #0E8784;
-  color: #FFFFFF;
+.radio__label:hover, .radio__label:focus {
+  background-color: #FDD6BA;
+  color: #333D4B;
 }
 
 .plan__section {

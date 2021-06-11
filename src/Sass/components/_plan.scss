@@ -101,9 +101,9 @@
     border-radius: 8px;
     min-height: 100%; // to have same height on the list cards
 
-    &:hover {
-        background-color: base.$bg-green-btn;
-        color: base.$tx-white;
+    &:hover, &:focus {
+        background-color: #FDD6BA;
+        color: base.$tx-black;
     }
 }
 

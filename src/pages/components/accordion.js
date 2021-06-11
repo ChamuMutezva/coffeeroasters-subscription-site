@@ -99,7 +99,7 @@ const Accordion = () => {
                                 <button aria-expanded="true" className={`accordion--btn`} onClick={handleShow} data-toggle="collapse"
                                     data-target={`collapse${plan.id}`} >{plan.question}</button>
                             </h3>
-                            <div id={`collapse${plan.id}`} className={`plan__card`}>
+                            <div id={`collapse${plan.id}`} className={`plan__card collapse${plan.id}`}>
 
                                 {plan.options.map(opt => {
                                     return <div className={`plan__select ${plan.name}`} key={opt.id}>
