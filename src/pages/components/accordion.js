@@ -96,10 +96,11 @@ const Accordion = () => {
                     return <li className="accordion__list__item" key={plan.id}>
                         <div id={plan.name} className="accordion__item">
                             <h3 className="accordion__header">
-                                <button aria-expanded="true" className={`accordion--btn`} onClick={handleShow} data-toggle="collapse"
+                                <button aria-expanded="true" aria-controls={`collapse${plan.id}`}
+                                id={`accordionBtn${plan.id}`} className={`accordion--btn`} onClick={handleShow} data-toggle="collapse"
                                     data-target={`collapse${plan.id}`} >{plan.question}</button>
                             </h3>
-                            <div id={`collapse${plan.id}`} className={`plan__card collapse${plan.id}`}>
+                            <div id={`collapse${plan.id}`} role="region" className={`plan__card collapse${plan.id}`}>
 
                                 {plan.options.map(opt => {
                                     return <div className={`plan__select ${plan.name}`} key={opt.id}>
