@@ -770,6 +770,10 @@ h1, h2, h3, h4, h5 {
   list-style: none;
 }
 
+.social__list__icon:hover, .social__list__icon:focus {
+  filter: invert(55%) saturate(99.8%) sepia(100%) hue-rotate(304.6deg);
+}
+
 .social {
   display: flex;
   justify-content: space-between;
@@ -1208,6 +1212,7 @@ address {
   }
   .plan__nav__list a {
     text-decoration: none;
+    outline: none;
   }
   .plan__nav__list a:hover > .nav__item__num, .plan__nav__list a:focus > .nav__item__num {
     color: #0E8784;

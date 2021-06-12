@@ -228,6 +228,7 @@
 
         a {
             text-decoration: none;
+            outline: none;
 
             &:hover>.nav__item__num,
             &:focus>.nav__item__num {

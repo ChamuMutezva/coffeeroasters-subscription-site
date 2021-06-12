@@ -24,17 +24,17 @@ const Footer = () => {
                     <ul className="social">
                         <li className="social__list">
                             <a href="/">
-                                <img src={facebook} alt="visit our facebook page" />
+                                <img className="social__list__icon" src={facebook} alt="visit our facebook page" />
                             </a>
                         </li>
                         <li className="social__list">
                             <a href="/">
-                                <img src={twitter} alt="lets chat on twitter" />
+                                <img className="social__list__icon" src={twitter} alt="lets chat on twitter" />
                             </a>
                         </li>
                         <li className="social__list">
                             <a href="/">
-                                <img src={instagram} alt="meet us on instagram" />
+                                <img className="social__list__icon" src={instagram} alt="meet us on instagram" />
                             </a>
                         </li>
                     </ul>

@@ -4,7 +4,7 @@ const AsideNavigation = () => {
             <nav>
                 <ul className="plan__nav__list">
                     <li className="plan__nav__item">
-                        <a href="#preferences">
+                        <a  href="#preferences">
                             <span className="nav__item__num">01 </span>
                             <span className="nav__item__text">Preferences</span>
                         </a>
