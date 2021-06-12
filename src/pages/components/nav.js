@@ -13,7 +13,7 @@ const Navigation = () => {
         console.log(ShowMenu)        
     }
     return(
-       <nav className="nav">
+       <nav aria-label="site" className="nav">
             <div className="logo__wrapper">
                 <Link to="/" className="logo--link" >
                     <img src={Logo} alt="well come to coffee roasters" />

@@ -103,8 +103,19 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav__item--btn {
+  position: relative;
   text-decoration: none;
   color: #333D4B;
+  outline: none;
+}
+.nav__item--btn:hover::after, .nav__item--btn:focus::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -0.4rem;
+  background-color: #0E8784;
 }
 
 .nav__item {
@@ -138,15 +149,15 @@ h1, h2, h3, h4, h5 {
   right: 0;
 }
 
-.toggle__btn__close {
-  display: none;
-}
-
 .toggle__btn__open {
   display: block;
   position: relative;
   background-color: inherit;
   border: none;
+}
+
+.toggle__btn__close {
+  display: none;
 }
 
 @media screen and (min-width: 720px) {

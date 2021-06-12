@@ -96,7 +96,8 @@ const Accordion = () => {
                     return <li className="accordion__list__item" key={plan.id}>
                         <div id={plan.name} className="accordion__item">
                             <h3 className="accordion__header">
-                                <button aria-expanded="true" aria-controls={`collapse${plan.id}`}
+                                <button aria-expanded={plan.id === "01" ? true : false }
+                                 aria-controls={`collapse${plan.id}`}                                 
                                 id={`accordionBtn${plan.id}`} className={`accordion--btn`} onClick={handleShow} data-toggle="collapse"
                                     data-target={`collapse${plan.id}`} >{plan.question}</button>
                             </h3>
