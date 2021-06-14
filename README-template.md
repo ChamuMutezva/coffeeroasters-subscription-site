@@ -54,8 +54,17 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
+formatting a string into currency
+**Intl.NumberFormat**
+```
+create number formatter
+const formatter = new Intl.NumberFormat("en-US", {
+  style: 'currency',
+  currency: 'USD',
+})
+//USAGE
+formatter.format(2500); //result $2, 500.00
+```
 To see how you can add code snippets, see below:
 
 ```html

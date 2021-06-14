@@ -1087,6 +1087,10 @@ address {
   animation-duration: 3s;
 }
 
+.hide__grind {
+  display: none;
+}
+
 .grind__disable {
   pointer-events: none;
   color: #e1d4d4;
