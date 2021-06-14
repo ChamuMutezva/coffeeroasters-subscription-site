@@ -63,6 +63,28 @@ const Accordion = () => {
         console.log(id)
         console.log(radioData)
 
+        const preferredChoice = Array.from(document.querySelectorAll("input[name='preference']"))
+        console.log(preferredChoice)
+        const grind = document.getElementById("accordionBtn04")
+        const grind__child = document.getElementById("collapse04")
+        /* if (id === "capsule") {
+             grind.classList.add("grind__disable")
+             grind__child.classList.add("collapse04")
+         } else {
+             grind.classList.remove("grind__disable")
+             grind__child.classList.remove("collapse04")
+         } */
+
+        const prefer = preferredChoice.filter(choice => choice.checked && choice.id === "capsule")
+        console.log(prefer)
+        if (prefer.length > 0) {
+            grind.classList.add("grind__disable")
+            grind__child.classList.add("collapse04")
+        } else {
+            grind.classList.remove("grind__disable")
+            grind__child.classList.remove("collapse04")
+        }
+
     }
 
     //form submission - to open the subscribe modal panel
@@ -96,9 +118,9 @@ const Accordion = () => {
                     return <li className="accordion__list__item" key={plan.id}>
                         <div id={plan.name} className="accordion__item">
                             <h3 className="accordion__header">
-                                <button aria-expanded={plan.id === "01" ? true : false }
-                                 aria-controls={`collapse${plan.id}`}                                 
-                                id={`accordionBtn${plan.id}`} className={`accordion--btn`} onClick={handleShow} data-toggle="collapse"
+                                <button aria-expanded={plan.id === "01" ? true : false}
+                                    aria-controls={`collapse${plan.id}`}
+                                    id={`accordionBtn${plan.id}`} className={`accordion--btn`} onClick={handleShow} data-toggle="collapse"
                                     data-target={`collapse${plan.id}`} >{plan.question}</button>
                             </h3>
                             <div id={`collapse${plan.id}`} role="region" className={`plan__card collapse${plan.id}`}>
@@ -126,11 +148,11 @@ const Accordion = () => {
                         <h3 className="order__title">Order Summary</h3>
                         <p className="order__content">
                             “I drink my coffee as
-                             <span className="ordered__item"> {prefered}</span>, with a
-                             <span className="ordered__item"> {beanChoice}</span> type of bean.
-                             <span className="ordered__item"> {qty}</span> ground ala
-                             <span className="ordered__item"> {grind}</span>, sent to me
-                             <span className="ordered__item"> {deliver}</span>.”
+                            <span className="ordered__item"> {prefered}</span>, with a
+                            <span className="ordered__item"> {beanChoice}</span> type of bean.
+                            <span className="ordered__item"> {qty}</span> ground ala
+                            <span className="ordered__item"> {grind}</span>, sent to me
+                            <span className="ordered__item"> {deliver}</span>.”
                         </p>
                     </div>
                     <button type="submit" className="hero--btn order--btn disabled">Create your plan</button>

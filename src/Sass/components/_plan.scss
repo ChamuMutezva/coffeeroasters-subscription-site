@@ -92,6 +92,10 @@
     animation-duration: 3s;
 }
 
+.grind__disable {
+    pointer-events: none;
+    color: #e1d4d4;
+}
 
 .radio__label {
     background-color: #F4F1EB;
