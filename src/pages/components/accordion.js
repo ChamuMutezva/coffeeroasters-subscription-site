@@ -74,12 +74,16 @@ const Accordion = () => {
              grind.classList.remove("grind__disable")
              grind__child.classList.remove("collapse04")
          } */
-
+         // check if in the first option of the accordion that "Capsule" is selected
+         // if it is selected , disable the grind option and uncheck its options
         const prefer = preferredChoice.filter(choice => choice.checked && choice.id === "capsule")
         console.log(prefer)
         if (prefer.length > 0) {
             grind.classList.add("grind__disable")
             grind__child.classList.add("collapse04")
+           // radioData.preference == null
+           setRadioData({...radioData, grind:null})
+
         } else {
             grind.classList.remove("grind__disable")
             grind__child.classList.remove("collapse04")
