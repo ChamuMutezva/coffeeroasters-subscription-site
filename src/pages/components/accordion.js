@@ -16,8 +16,8 @@ const Accordion = () => {
     const [verb, setVerb] = useState("as")
 
     useEffect(() => {
-        console.log("radio data changes")
-
+       // console.log("radio data changes")
+       //disable orderBtn if no selection has been made
         const orderBtn = document.querySelector(".order--btn")
         if (radioData.preference !== null && radioData.bean !== null &&
             radioData.quantity !== null &&
@@ -35,6 +35,8 @@ const Accordion = () => {
     const qty = radioData.quantity === null ? "_____" : radioData.quantity
     const grind = radioData.grind === null ? "_____" : radioData.grind
     const deliver = radioData.deliveries === "weekly" ? "Every week" : radioData.deliveries === "fortnight" ? "Every 2 weeks" : radioData.deliveries === 'monthly' ? "Monthly" : "_____"
+    
+    //calculate total shipping cost per month per weight
     const shippingCost = () => {
         if (radioData.quantity === "250g") {
             return radioData.deliveries === "weekly" ? 7.2 * 4 :
@@ -50,13 +52,12 @@ const Accordion = () => {
                     32 * 2 : 42.00
         }
     }
-    // radioData.deliveries === "weekly" ? "$14.00" : radioData.deliveries === "fortnight" ? "$17.25" : "$22.50"
-
+    
     //toggle - accordion control centre 
     //click the question to reveal and close the answers 
+    // that is show available answers
     const handleShow = (evt) => {
         setShow(!show)
-
         const btn = evt.target
         const parent = btn.parentElement
         const attribute = btn.getAttribute('data-target')
@@ -71,16 +72,15 @@ const Accordion = () => {
 
     //radio buttons to make the selection
     const onChange = (evt) => {
-
-        console.log(evt.target)
+       // console.log(evt.target)
         const { name, id } = evt.target
         setRadioData({ ...radioData, [name]: id })
-        console.log(name)
-        console.log(id)
-        console.log(radioData)
+       //// console.log(name)
+        //console.log(id)
+        // console.log(radioData)
 
         const preferredChoice = Array.from(document.querySelectorAll("input[name='preference']"))
-        console.log(preferredChoice)
+       // console.log(preferredChoice)
         const grind = document.getElementById("accordionBtn04")
         const grind__child = document.getElementById("collapse04")
         const show__grind = document.querySelector(".show__grind")
@@ -181,7 +181,7 @@ const Accordion = () => {
                             <span className="ordered__item"> {deliver}</span>.”
                         </p>
                     </div>
-                    <button type="submit" className="hero--btn order--btn disabled">Create your plan</button>
+                    <button type="submit" className="hero--btn order--btn disabled" title="proceed to checkout form">Create your plan</button>
                 </form>
             </div>
 
