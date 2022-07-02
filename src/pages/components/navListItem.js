@@ -8,6 +8,7 @@ const NavListItem = (props) => {
         <li className="nav__item">
             <Link to={props.link}
                 role="menuitem"
+                onClick={props.click}
                 className="anchor nav__item--btn">{props.name}
             </Link>
         </li>

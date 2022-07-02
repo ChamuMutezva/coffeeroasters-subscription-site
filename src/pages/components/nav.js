@@ -30,7 +30,7 @@ const Navigation = () => {
             </div>
 
             <div className={`modal ${ShowMenu ? "modal__open" : ""}`}>
-                <NavList />
+                <NavList click={hamburgerClick} />
             </div>
 
        </nav>
